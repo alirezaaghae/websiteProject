@@ -30,8 +30,9 @@
     <meta name="layoutmode" content="fitscreen" />
     <meta name="wap-font-scale" content="no" />
     <!-- Site index link -->
-    <title>Admoon-Landing-Page</title>
+    <title>Admoon Landing Page</title>
     <!--  slider  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.min.css" />
     <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
@@ -65,7 +66,10 @@
             <div class="content">
                 <h1>با <span>هر بار</span> خرید به همان میزان <span>شارژ هدیه</span> دریافت کنید</h1>
                 <p>مدریت اکانت خود را به ما بسپارید و بهترین کمپین را از ما دریافت کنید</p>
-                <img src="assets/images/info-icon.svg" alt="info-icon" title="info-icon"><span>فقط برای مدت محدود</span>
+                <div class="infoo">
+                    <img src="assets/images/info-icon.svg" alt="info-icon" title="info-icon">
+                    <span>فقط برای مدت محدود</span>
+                </div>
                 <a href="#">خرید پکیج</a>
             </div>
             <div class="img"><img src="assets/images/gif1.svg" alt="Gif-Header" title="Gif-Header"></div>
@@ -91,7 +95,7 @@
                                <hr>
                                <li><i class="info icon">&#33;</i><span class="info">گذارش گیری روزانه</span></li>
                            </ul>
-                           <button><a href="#"><i>&#9655;&#x25B7;</i><span>مرحله بعد</span></a></button>
+                           <button><i>&#9655;&#x25B7;</i><span>مرحله بعد</span></button>
                        </div>
                        <div class="formItems">
                            <div id="selectItems" class="formItem">
@@ -137,7 +141,7 @@
                                    </li>
                                </ul>
                            </div>
-                           <div id="formItems" class="formItem">
+                           <div id="formInputs" class="formItem">
                             <div class="icon">
                                 <img src="assets/images/form-icon.svg" alt="form-icon" title="form-icon">
                             </div>
@@ -178,7 +182,7 @@
                            <div id="registeredItems" class="formItem">
                                <img src="assets/images/true-icon.svg" alt="registered-icon" title="registered-icon">
                                <span>سفارش شما با موفقیت ثبت شد</span>
-                               <span>کارشناس ما با شما ارتباط برقرار خواهند کرد</span>
+                               <p>کارشناس ما با شما ارتباط برقرار خواهند کرد</p>
                            </div>
                        </div>
                    </div>
@@ -199,13 +203,175 @@
                </div>
            </div>
        </section> 
+       <section id="sec_2">
+           <div class="main">
+              <div class="container">
+               <div class="methods">
+                   <h2>روش کار ما چگونه است؟</h2>
+                   <ul id="methodsItems" class="items row desktop">
+                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                           <div class="overflow">
+                               <div class="icon"><img src="assets/images/icon1-2.svg" alt=""></div>
+                               <h3>گزارش دهی حرفه‌ای</h3>
+                               <p>پشتیبانی حرفه‌ای ما هرگونه نگرانی را از بابت شفافیت رفع می‌کند. به کمک گزارش آنی پنل دیتا استودیو، شما می‌توانید در هر لحظه به آمار کمپین خود دسترسی داشته باشید.</p>
+                           </div>
+                       </li>
+                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                           <div class="overflow">
+                               <div class="icon"><img src="assets/images/icon2-2.svg" alt=""></div>
+                               <h3>مدیریت و بهینه سازی پیشرفته</h3>
+                               <p>از طریق مدیریت و بهینه سازی پیشرفته، نرخ تبدیل افزایش و هزینه هر کلیک کاهش خواهد یافت. تعهد ما اجرای یک کمپین نتیجه بخش و برتری میان رقبا خواهد بود.</p>
+                           </div>
+                       </li>
+                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                           <div class="overflow">
+                               <div class="icon"><img src="assets/images/icon3-2.svg" alt=""></div>
+                               <h3>طراحی هدفمند کمپین</h3>
+                               <p>طراحی هدفمند کمپین با استراتژی نتیجه محور، نوشتن متون جذاب تبلیغ و بهبود جایگاه سایت شما تنها بخشی از مزایای همکاری با تیم حرفه‌ای ما خواهد بود.</p>
+                           </div>
+                       </li>
+                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                           <div class="overflow">
+                               <div class="icon"><img src="assets/images/icon4-2.svg" alt=""></div>
+                               <h3>تحلیل کسب و کار شما</h3>
+                               <p>پیش از طراحی کمپین، ما تا کسب‌وکار شما را تحلیل و رفتار مشتریان نهایی و استراژی رقبا را شناسایی می‌کنیم. نتیجه این بررسی دقیق، زیربنای طراحی دیتامحور کمپین خواهد بود.</p>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+               <div class="dotslines">
+                       <div class="up">
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                       </div>
+                       <div class="down">
+                           <div></div>
+                           <div></div>
+                       </div>
+                   </div>
+               <div class="Results">
+                   <h2>نتایجی از اعتماد به ادمون به دست خواهید آورد</h2>
+                   <ul id="resultsItems" class="items row">
+                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                           <div class="overflow">
+                               <img src="assets/images/icon1-3.svg" alt="icon1" title="icon1">
+                               <span></span>
+                           </div>
+                       </li>
+                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                           <div class="overflow">
+                               <img src="assets/images/icon2-3.svg" alt="icon2" title="icon2">
+                               <span></span>
+                           </div>
+                       </li>
+                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                           <div class="overflow">
+                               <img src="assets/images/icon3-3.svg" alt="icon3" title="icon3">
+                               <span></span>
+                           </div>
+                       </li>
+                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                           <div class="overflow">
+                               <img src="assets/images/icon4-3.svg" alt="icon4" title="icon4">
+                               <span></span>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+              </div>
+           </div>
+       </section>
+       <section id="sec_3">
+           <div class="container">
+               <h2>سوالات متداول</h2>
+              <div class="items">
+                <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">امکان دسترسی به اکانت گوگل ادز وجود دارد؟ <div class="icon"><img src="assets/images/Polygon-icon.svg" alt="" title=""></div></a>
+                    </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">آیا کمپینم را باید قبل از خرید پکیج شروع کنم؟ <div class="icon"><img src="assets/images/Polygon-icon.svg" alt="" title=""></div> </a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">هزینه هر کلیک چقدر است؟ <div class="icon"><img src="assets/images/Polygon-icon.svg" alt="" title=""></div></a>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
+                  </div>
+                </div>
+              </div> 
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">پس از خرید سرویس گوگل ادز تا چند روز تبلیغات من فعال است؟ <div class="icon"><img src="assets/images/Polygon-icon.svg" alt="" title=""></div></a>
+                    </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">چه مدت کمپین فعال خواهد ماند؟ <div class="icon"><img src="assets/images/Polygon-icon.svg" alt="" title=""></div></a>
+                    </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">چگونه بهینه‌سازی منجر به کاهش هزینه تبلیغات می‌شود؟ <div class="icon"><img src="assets/images/Polygon-icon.svg" alt="" title=""></div></a>
+                    </h4>
+                  </div>
+                  <div id="collapse6" class="panel-collapse collapse">
+                    <div class="panel-body">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</div>
+                  </div>
+                </div>
+              </div> 
+              </div>
+            </div>
+       </section>
     </main>
     
     <footer class="site-footer footer-index" role="contentinfo">
-    
+        <div class="container">
+            <div class="logo"><img src="assets/images/logo.svg" alt="admoonLogo" title="admoon Logo"></div>
+            <nav>
+                <ul class="items">
+                    <li class="item"><a href="#">خانه</a></li>
+                    <li class="item"><a href="#">پکیج ها</a></li>
+                    <li class="item"><a href="#">درباره کمپین</a></li>
+                    <li class="item"><a href="#">سوالات متداول</a></li>
+                </ul>
+            </nav>
+            <a href="tel:021">02122222222</a>
+        </div>
     </footer>
 </div>
-<script src="assets/js/jquery-1.12.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
 <script src="assets/js/script.js" defer="defer"></script>
 <script src="mjform.js"></script>
