@@ -1,0 +1,19 @@
+/* responsive */
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+    
+}
+
+@media only screen and (min-width: 760px) and (max-width: 991px) {
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 760px) {
+/*    start code here   */
+    .wrapper{}
+}
+
+@media only screen and (max-width: 555px){
+    /*  body{overflow-x: hidden;}  */
+    /*  start code here   */
+    .wrapper{}
+}

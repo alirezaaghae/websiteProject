@@ -1,0 +1,17 @@
+@import url(styleFontIran.css);
+::-moz-selection {color: #f9d4a3;background: #9b7749;}
+::selection {color: #f9d4a3;background: #8b363a;}
+:focus {outline: none;}
+* {margin: 0;padding: 0;}
+html {overflow-x: hidden;}
+html,body,button,input,optgroup,a,span,form,div,ul,li,p,strong,em,div,h1,h2,h3,h4,h5,h6,section,main,select,textarea {}
+a{transition:all .3s;}
+/*    start code here   */
+
+body{
+    background: #fff;
+    position: relative;
+}
+.wrapper{
+    position: relative;
+}

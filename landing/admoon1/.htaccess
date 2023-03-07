@@ -1,0 +1,8 @@
+RewriteBase /
+
+RewriteOptions InheritDown
+
+RewriteRule ^(css|js|fonts|img|sitemap.xml|marjan|images|assets|mjform.js|mjform.php|my|ip|page|admin.php|.*\.(gif|jpg|png))($|/) - [L]
+
+RewriteRule    ^([A-Za-z0-9-]+)/([^/]+)/?$      index.php?page=$1    [NC,L,QSA]
+RewriteRule    ^([^/]+)/?$  					 index.php?page=$1    [NC,L,QSA]
