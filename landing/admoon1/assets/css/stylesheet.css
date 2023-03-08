@@ -93,4 +93,38 @@ body{background: #fff;position: relative;}
 #registeredItems p{}
 
 #sec_1>.container>.form>.states{}
-#sec_1>.container>.form>.states{}
+#sec_1>.container>.form>.states>.state{}
+#sec_1>.container>.form>.states>.state div{}
+#sec_1>.container>.form>.states>.state .uncheck{}
+#sec_1>.container>.form>.states>.state .checked{}
+#sec_1>.container>.form>.states>.state .circle.uncheck{}
+#sec_1>.container>.form>.states>.state .circle.checked{}
+#sec_1>.container>.form>.states>.state.selection{}
+#sec_1>.container>.form>.states>.state.inquiry{}
+#sec_1>.container>.form>.states>.state.register{}
+#sec_1>.container>.form>.states>.state .circle{}
+#sec_1>.container>.form>.states>.state .line{}
+#sec_1>.container>.form>.states>.state.selection .circle::before{content:'انتخاب پلن';}
+#sec_1>.container>.form>.states>.state.inquiry .circle::before{content:'استعلام سایت';}
+#sec_1>.container>.form>.states>.state.register .circle::before{content:'ثبت سفارش';}
+
+#sec_2{}
+#sec_2>.main{}
+#sec_2>.main>container{}
+#sec_2>.main>container>methods{}
+#sec_2>.main>container>methods{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
