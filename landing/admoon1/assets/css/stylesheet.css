@@ -110,15 +110,61 @@ body{background: #fff;position: relative;}
 
 #sec_2{}
 #sec_2>.main{}
-#sec_2>.main>container{}
-#sec_2>.main>container>methods{}
-#sec_2>.main>container>methods{}
+#sec_2>.main>.container{}
+#sec_2>.main>.container>.methods{}
+#sec_2>.main>.container>.methods>h2{}
+#sec_2>.main>.container>.methods>ul.items{}
+#sec_2>.main>.container>.methods>ul.items.desktop{}
+#sec_2>.main>.container>.methods>ul.items>.item{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>.icon{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>.icon>img{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>h3{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>p{}
+#sec_2>.main>.container>.dotslines{}
+#sec_2>.main>.container>.dotslines>.up{}
+#sec_2>.main>.container>.dotslines>.up div{}
+#sec_2>.main>.container>.dotslines>.up div:nth-child(1){}
+#sec_2>.main>.container>.dotslines>.up div:nth-child(2){}
+#sec_2>.main>.container>.dotslines>.up div:nth-child(3){}
+#sec_2>.main>.container>.dotslines>.down{}
+#sec_2>.main>.container>.dotslines>.down div{}
+#sec_2>.main>.container>.dotslines>.down div:nth-child(1){}
+#sec_2>.main>.container>.dotslines>.down div:nth-child(2){}
+#sec_2>.main>.container>.Results{}
+#sec_2>.main>.container>.Results>h2{}
+#sec_2>.main>.container>.Results>ul{}
+#sec_2>.main>.container>.Results>ul>li{}
+#sec_2>.main>.container>.Results>ul>li>.overflow{}
+#sec_2>.main>.container>.Results>ul>li>.overflow>img{}
+#sec_2>.main>.container>.Results>ul>li>.overflow>span{}
 
+#sec_3{}
+#sec_3>.container{}
+#sec_3>.container>h2{}
+#sec_3>.container>h2{}
+#sec_3>.container>.items{}
+#sec_3>.container>.items .panel-group{}
+#sec_3>.container>.items .panel-group .panel-default{}
+#sec_3>.container>.items .panel-group .panel-default>div{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a>div{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a>div span{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a>div img{}
+#sec_3>.container>.items .panel-group .panel-default .panel-collapse{}
+#sec_3>.container>.items .panel-group .panel-default .panel-collapse .panel-body{}
+#sec_3>.container>.items .panel-group .panel-default .panel-collapse .panel-body p{}
 
-
-
-
-
+.wrapper>footer{}
+.wrapper>footer>.container{}
+.wrapper>footer>.container>.logo{}
+.wrapper>footer>.container>.logo>img{}
+.wrapper>footer>.container>nav{}
+.wrapper>footer>.container>nav>ul{}
+.wrapper>footer>.container>nav>ul>li{}
+.wrapper>footer>.container>nav>ul>li>a{}
+.wrapper>footer>.container>#footer_tel{}
 
 
 
