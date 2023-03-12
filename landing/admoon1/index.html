@@ -34,10 +34,9 @@
     <!--  slider  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.min.css" />
-    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+<!--    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">-->
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/fonts.css" />
     <!--[if lt IE 10]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexibility/2.0.1/flexibility.js"></script>
     <![endif]-->
@@ -45,6 +44,9 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="./libgif/libgif.js"></script>
+	<script type="text/javascript" src="./libgif/rubbable.js"></script>
+	
     <style>
         /* Empty */
     </style>
@@ -61,10 +63,11 @@
                 <li class="item"><a href="#">درباره کمپین</a></li>
                 <li class="item"><a href="#">سوالات متداول</a></li>
             </ul>
+            <div class="logo"><img src="assets/images/logo.svg" alt="admoon_logo" title="admoon logo"></div> 
         </nav>
         <div class="header">
             <div class="content">
-                <h1>با <span>هر بار</span> خرید به همان میزان <span>شارژ هدیه</span> دریافت کنید</h1>
+                <h1>با <span>هر بار</span> خرید <br>به همان میزان <span>شارژ هدیه</span> دریافت کنید</h1>
                 <p>مدریت اکانت خود را به ما بسپارید و بهترین کمپین را از ما دریافت کنید</p>
                 <div class="infoo">
                     <img src="assets/images/info-icon.svg" alt="info-icon" title="info-icon">
@@ -72,7 +75,17 @@
                 </div>
                 <a href="#">خرید پکیج</a>
             </div>
-            <div class="img"><img src="assets/images/gif1.svg" alt="Gif-Header" title="Gif-Header"></div>
+            <div class="img">
+                <img id="example2" src="assets/images/gif1.gif" rel:auto_play="1"/>
+			    <br>
+			    <script type="text/javascript">
+				    // var sup2 = new RubbableGif({ gif: document.getElementById('example2') } );
+				    // sup2.load();
+				    var rub = new SuperGif({ gif: document.getElementById('example2') } );
+				    rub.load();
+					 
+			    </script>
+			</div>
         </div>
       </div>
     </header>
@@ -93,9 +106,9 @@
                                <li><i class="tick icon">&#2714;</i><span>آمار و اطلاعات دقیق</span></li>
                                <li><i class="tick icon">&#2714;</i><span>گذارش گیری روزانه</span></li>
                                <hr>
-                               <li><i class="info icon">&#33;</i><span class="info">گذارش گیری روزانه</span></li>
+                               <li><i class="info icon">&#33;</i><span class="info">زمان محدود است فرصت را از دست ندید</span></li>
                            </ul>
-                           <button><i>&#9655;&#x25B7;</i><span>مرحله بعد</span></button>
+                           <button><i>&#9655;</i><span>مرحله بعد</span></button>
                        </div>
                        <div class="formItems">
                            <div id="selectItems" class="formItem">
@@ -209,28 +222,28 @@
                <div class="methods">
                    <h2>روش کار ما چگونه است؟</h2>
                    <ul id="methodsItems" class="items row desktop">
-                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                            <div class="overflow">
                                <div class="icon"><img src="assets/images/icon1-2.svg" alt=""></div>
                                <h3>گزارش دهی حرفه‌ای</h3>
                                <p>پشتیبانی حرفه‌ای ما هرگونه نگرانی را از بابت شفافیت رفع می‌کند. به کمک گزارش آنی پنل دیتا استودیو، شما می‌توانید در هر لحظه به آمار کمپین خود دسترسی داشته باشید.</p>
                            </div>
                        </li>
-                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                            <div class="overflow">
                                <div class="icon"><img src="assets/images/icon2-2.svg" alt=""></div>
                                <h3>مدیریت و بهینه سازی پیشرفته</h3>
                                <p>از طریق مدیریت و بهینه سازی پیشرفته، نرخ تبدیل افزایش و هزینه هر کلیک کاهش خواهد یافت. تعهد ما اجرای یک کمپین نتیجه بخش و برتری میان رقبا خواهد بود.</p>
                            </div>
                        </li>
-                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                            <div class="overflow">
                                <div class="icon"><img src="assets/images/icon3-2.svg" alt=""></div>
                                <h3>طراحی هدفمند کمپین</h3>
                                <p>طراحی هدفمند کمپین با استراتژی نتیجه محور، نوشتن متون جذاب تبلیغ و بهبود جایگاه سایت شما تنها بخشی از مزایای همکاری با تیم حرفه‌ای ما خواهد بود.</p>
                            </div>
                        </li>
-                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                            <div class="overflow">
                                <div class="icon"><img src="assets/images/icon4-2.svg" alt=""></div>
                                <h3>تحلیل کسب و کار شما</h3>
@@ -253,25 +266,25 @@
                <div class="Results">
                    <h2>نتایجی از اعتماد به ادمون به دست خواهید آورد</h2>
                    <ul id="resultsItems" class="items row">
-                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                            <div class="overflow">
                                <img src="assets/images/icon1-3.svg" alt="icon1" title="icon1">
                                <span>برترین جایگاه میان رقبا</span>
                            </div>
                        </li>
-                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                            <div class="overflow">
                                <img src="assets/images/icon2-3.svg" alt="icon2" title="icon2">
                                <span>کاهش هزینه هر کلیک</span>
                            </div>
                        </li>
-                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                            <div class="overflow">
                                <img src="assets/images/icon3-3.svg" alt="icon3" title="icon3">
                                <span>افزایش حداکثری نرخ تبدیل</span>
                            </div>
                        </li>
-                       <li class="item col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                            <div class="overflow">
                                <img src="assets/images/icon4-3.svg" alt="icon4" title="icon4">
                                <span>نمایش برای مخاطب هدف</span>
@@ -372,9 +385,8 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+<!--<script src="assets/owl-carousel/js/owl.carousel.min.js"></script>-->
 <script src="assets/js/script.js" defer="defer"></script>
-<script src="mjform.js"></script>
 </body>
 
 </html>

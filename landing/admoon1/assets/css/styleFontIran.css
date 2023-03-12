@@ -12,10 +12,12 @@ h1, h2, h3, h4, h5, h6,input, textarea {
 h1 {
 	font-weight: bold;
 }
+/*
 .wrapper {
 	max-width: 900px;
 	margin: 0 auto;
 }
+*/
 .ltr {
 	direction: ltr;
 }

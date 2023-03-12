@@ -10,46 +10,201 @@ a{transition:all .3s;}
 
 body{background: #fff;position: relative;}
 .wrapper{position: relative;}
-.wrapper>header{}
-.wrapper>header>.circle-background{}
-.wrapper>header>.container{}
-.wrapper>header> nav{}
-.wrapper>header> nav>ul.items{}
-.wrapper>header> nav>ul.items>li.item{}
-.wrapper>header> nav>ul.items>li.item>a{}
-.wrapper>header> .header{}
-.wrapper>header> .header>.content{}
-.wrapper>header> .header>.content h1{}
-.wrapper>header> .header>.content h1 span{}
-.wrapper>header> .header>.content h1 span::before{content: '';}
-.wrapper>header> .header>.content p{}
-.wrapper>header> .header>.content .infoo{}
-.wrapper>header> .header>.content .infoo img{}
-.wrapper>header> .header>.content .infoo span{}
-.wrapper>header> .header>.content a{}
-.wrapper>header> .header>.img{}
-.wrapper>header> .header>.img img{}
+.wrapper>header{background-color: #C0D2E0;padding-top: 50px;position: relative;overflow: hidden;}
+.wrapper>header>.circle-background{
+    position: absolute;
+    right: 169px;
+    top: 139px;
+    background-color: #d0e1ee;
+    width: 450px;
+    height: 450px;
+    border-radius: 304px;
+    z-index: 0;
+}
+.wrapper>header>.container{
+    position: relative;
+    z-index: 1;
+}
+.wrapper>header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper>header nav>ul.items{
+    display: flex;
+}
+.wrapper>header nav>ul.items>li.item{}
+.wrapper>header nav>ul.items>li.item>a{
+    font-size: 15px;
+    color: #5e5e5e;
+    font-family: "IRANSans";
+    padding: 16px;
+}
+.wrapper>header nav>.logo{}
+.wrapper>header nav>.logo img{
+    max-width: 70px;
+}
+.wrapper>header .header{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.wrapper>header .header>.content{
+    margin-top: 50px;
+}
+.wrapper>header .header>.content h1{
+    font-size: 29px;
+    color: #385e72;
+    font-weight: 800;
+    line-height: 2;
+    /* margin-bottom: 20px; */
+}
+.wrapper>header .header>.content h1 span{
+    font-size: 29px;
+    text-decoration: underline;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "IRAnSans";
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper>header .header>.content h1 span::before{content: '';background-image: url(../images/back-text.svg);background-repeat: no-repeat;z-index: -1;background-size: contain;width: 100%;height: 40px;position: absolute;}
+.wrapper>header .header>.content p{
+    font-size: 14px;
+    color: #80939c;
+    font-weight: 500;
+    font-family: "IRANSans";
+    line-height: 4;
+}
+.wrapper>header .header>.content .infoo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.wrapper>header .header>.content .infoo img{
+    max-width: 20px;
+}
+.wrapper>header .header>.content .infoo span{
+    color: #f66363;
+    font-weight: 500;
+    font-family: "IRANSans";
+    margin-right: 10px;
+    font-size: 14px;
+}
+.wrapper>header .header>.content a{
+    display: flex;
+    width: 150px;
+    height: 56px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #fabb04;
+    font-weight: bold;
+    font-family: "IRANSans";
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.wrapper>header .header>.content a:hover{
+    color: white;
+    background: #fabb04;
+    transform: scale(1.05);
+}
+
+.wrapper>header .header>.img{
+    text-align: left;
+}
+.wrapper>header .header>.img x-gif{
+    max-width: 80%;
+}
 .wrapper>main{}
 
-#sec_1{}
+#sec_1{
+    padding-top: 70px;
+}
 #sec_1>.container{}
 #sec_1>.container>.form{}
-#sec_1>.container>.form>.main{}
-#sec_1>.container>.form>.main>.content{}
-#sec_1>.container>.form>.main>.content>h3{}
-#sec_1>.container>.form>.main>.content>span{}
-#sec_1>.container>.form>.main>.content>p{}
-#sec_1>.container>.form>.main>.content>ul{}
+#sec_1>.container>.form>.main{
+    display: flex;
+}
+#sec_1>.container>.form>.main>.content{
+    width: 30%;
+}
+#sec_1>.container>.form>.main>.content>h3{
+    font-size: 35px;
+    color: #494949;
+    font-weight: bold;
+}
+#sec_1>.container>.form>.main>.content>span{
+    font-size: 13px;
+    color: #34a753;
+    font-weight: 500;
+    font-family: "IRANSans";
+    margin: 20px 0 10px 0;
+    display: inline-block;
+}
+#sec_1>.container>.form>.main>.content>p{
+    font-size: 14px;
+    line-height: 2;
+    max-width: 90%;
+    color: #404040;
+    font-family: "IRANSans";
+    font-weight: 300;
+}
+#sec_1>.container>.form>.main>.content>ul{
+    margin-top: 20px;
+}
 #sec_1>.container>.form>.main>.content>ul>li{}
 #sec_1>.container>.form>.main>.content>ul>li>i{}
 #sec_1>.container>.form>.main>.content>ul>li>i.icon{}
-#sec_1>.container>.form>.main>.content>ul>li>i.tick{}
-#sec_1>.container>.form>.main>.content>ul>li>i.info{}
-#sec_1>.container>.form>.main>.content>ul>li>span{}
-#sec_1>.container>.form>.main>.content>ul>li>span.info{}
-#sec_1>.container>.form>.main>.content>button{}
-#sec_1>.container>.form>.main>.content>button>i{}
-#sec_1>.container>.form>.main>.content>button>span{}
+#sec_1>.container>.form>.main>.content>ul>li>i.tick{
+    color: #2a9447;
+    font-size: 15px;
+}
+#sec_1>.container>.form>.main>.content>ul>li>i.info{
+    color: #fabb04;
+}
+#sec_1>.container>.form>.main>.content>ul>li>span{
+    font-size: 15px;
+    color: #404040;
+    font-weight: 300;
+    font-family: "IRANSans";
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 2;
+}
+#sec_1>.container>.form>.main>.content>ul>li>span.info{
+    font-size: 14px;
+    color: #fabb04;
+    font-family: 'IRANSans';
+}
+#sec_1>.container>.form>.main>.content>button{
+    width: 135px;
+    height: 52px;
+    border-radius: 7px;
+    background-color: #ebebeb;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+}
+#sec_1>.container>.form>.main>.content>button>i{
+    font-size: 16px;
+    margin-top: 5px;
+}
+#sec_1>.container>.form>.main>.content>button>span{
+    font-size: 17px;
+    font-weight: 900;
+    font-family: "IRANSans";
+    margin-right: 10px;
+}
 #sec_1>.container>.form>.main>.content>button.active{}
 #sec_1>.container>.form>.main>.content>button.unactive{}
 #sec_1>.container>.form>.main>.formItems{}
@@ -109,48 +264,183 @@ body{background: #fff;position: relative;}
 #sec_1>.container>.form>.states>.state.register .circle::before{content:'ثبت سفارش';}
 
 #sec_2{}
-#sec_2>.main{}
-#sec_2>.main>.container{}
-#sec_2>.main>.container>.methods{}
-#sec_2>.main>.container>.methods>h2{}
-#sec_2>.main>.container>.methods>ul.items{}
+#sec_2>.main{
+    border-radius: 15px;
+    background-color: #faeaba;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+#sec_2>.main>.container{
+    padding: 0 50px;
+}
+#sec_2>.main>.container>.methods{
+}
+#sec_2>.main>.container>.methods>h2{
+    font-size: 25px;
+    color: #43300a;
+    font-weight: bold;
+    text-align: center;
+}
+#sec_2>.main>.container>.methods>ul.items{
+    margin-top: 50px;
+}
 #sec_2>.main>.container>.methods>ul.items.desktop{}
 #sec_2>.main>.container>.methods>ul.items>.item{}
-#sec_2>.main>.container>.methods>ul.items>.item>.overflow{}
-#sec_2>.main>.container>.methods>ul.items>.item>.overflow>.icon{}
-#sec_2>.main>.container>.methods>ul.items>.item>.overflow>.icon>img{}
-#sec_2>.main>.container>.methods>ul.items>.item>.overflow>h3{}
-#sec_2>.main>.container>.methods>ul.items>.item>.overflow>p{}
-#sec_2>.main>.container>.dotslines{}
-#sec_2>.main>.container>.dotslines>.up{}
-#sec_2>.main>.container>.dotslines>.up div{}
-#sec_2>.main>.container>.dotslines>.up div:nth-child(1){}
-#sec_2>.main>.container>.dotslines>.up div:nth-child(2){}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow{
+    overflow:hidden;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #faeaba;
+    font-weight: 200;
+    font-family: "IRANSans";
+    text-align: center;
+    position: relative;
+    line-height: 1.6;
+    min-height: 290px;
+    padding: 15px;
+    }
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow::before{position: absolute;top: 60px;left: -77px;opacity: 0.220;font-size: 230px;font-weight: 900;color: #faeaba;font-family: "IRANSans";}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(1)>.overflow::before{content:'01';}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(2)>.overflow::before{content:'02';}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(3)>.overflow::before{content:'03';}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(4)>.overflow::before{content:'04';}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(1)>.overflow{background-color: #845e12;}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(2)>.overflow{background-color: #dc5252;}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(3)>.overflow{background-color: #e76f22;}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(4)>.overflow{background-color: #5583d2;}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>.icon{
+    max-width: 80px;
+    text-align: center;
+    margin: auto;
+    margin-top: 17px;
+}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>.icon>img{
+}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>h3{
+    margin: 20px 0 10px 0;
+}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>p{
+    font-weight: 200;
+}
+#sec_2>.main>.container>.dotslines{
+    width: 77%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#sec_2>.main>.container>.dotslines>.up{
+    border-bottom: 2px dashed #845f12;
+    border-left: 2px dashed #845f12;
+    border-right: 2px dashed #845f12;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#sec_2>.main>.container>.dotslines>.up div{
+    width: 100%;
+    height: 100%;
+}
+#sec_2>.main>.container>.dotslines>.up div:nth-child(1){
+    border-left: 2px dashed #845f12;
+}
+#sec_2>.main>.container>.dotslines>.up div:nth-child(2){
+    border-left: 2px dashed #845f12;
+}
 #sec_2>.main>.container>.dotslines>.up div:nth-child(3){}
-#sec_2>.main>.container>.dotslines>.down{}
-#sec_2>.main>.container>.dotslines>.down div{}
-#sec_2>.main>.container>.dotslines>.down div:nth-child(1){}
+#sec_2>.main>.container>.dotslines>.down{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 2px;
+}
+#sec_2>.main>.container>.dotslines>.down div{
+    width: 100%;
+    height: 100%;
+}
+#sec_2>.main>.container>.dotslines>.down div:nth-child(1){
+    border-left: 2px dashed #845f12;
+}
 #sec_2>.main>.container>.dotslines>.down div:nth-child(2){}
-#sec_2>.main>.container>.Results{}
-#sec_2>.main>.container>.Results>h2{}
+#sec_2>.main>.container>.Results{
+    margin-top: 20px;
+}
+#sec_2>.main>.container>.Results>h2{
+    font-size: 20px;
+    color: #43300a;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
 #sec_2>.main>.container>.Results>ul{}
 #sec_2>.main>.container>.Results>ul>li{}
-#sec_2>.main>.container>.Results>ul>li>.overflow{}
-#sec_2>.main>.container>.Results>ul>li>.overflow>img{}
-#sec_2>.main>.container>.Results>ul>li>.overflow>span{}
+#sec_2>.main>.container>.Results>ul>li>.overflow{
+    border-radius: 11px;
+    border: 1px solid #4f4f50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    min-height: 160px;
+}
+#sec_2>.main>.container>.Results>ul>li>.overflow>img{
+    max-width: 60px;
+    margin-bottom: 15px;
+    filter: grayscale(1);
+}
+#sec_2>.main>.container>.Results>ul>li>.overflow>span{
+    font-size: 15px;
+    color: #4f4f50;
+    font-weight: 500;
+    font-family: "IRANSans";
+}
 
-#sec_3{}
+#sec_3{
+    padding: 50px;
+}
 #sec_3>.container{}
-#sec_3>.container>h2{}
-#sec_3>.container>h2{}
-#sec_3>.container>.items{}
-#sec_3>.container>.items .panel-group{}
-#sec_3>.container>.items .panel-group .panel-default{}
+#sec_3>.container>h2{
+    font-size: 30px;
+    color: #3e3e3e;
+    text-align: center;
+    font-weight: bold;
+}
+#sec_3>.container>.items{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+}
+#sec_3>.container>.items .panel-group{
+    width: 100%;
+    padding: 10px;
+}
+#sec_3>.container>.items .panel-group .panel-default{
+    margin-top: 20px;
+}
 #sec_3>.container>.items .panel-group .panel-default>div{}
-#sec_3>.container>.items .panel-group .panel-default .panel-title{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title{
+    font-size: 15px;
+    color: #3e3e3e;
+    font-weight: 500;
+}
 #sec_3>.container>.items .panel-group .panel-default .panel-title a{}
-#sec_3>.container>.items .panel-group .panel-default .panel-title a>div{}
-#sec_3>.container>.items .panel-group .panel-default .panel-title a>div span{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 25px 10px;
+}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a>div span{
+    font-weight: 500;
+    color: #3e3e3e;
+}
 #sec_3>.container>.items .panel-group .panel-default .panel-title a>div img{}
 #sec_3>.container>.items .panel-group .panel-default .panel-collapse{}
 #sec_3>.container>.items .panel-group .panel-default .panel-collapse .panel-body{}
