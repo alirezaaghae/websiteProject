@@ -73,7 +73,7 @@
                     <img src="assets/images/info-icon.svg" alt="info-icon" title="info-icon">
                     <span>فقط برای مدت محدود</span>
                 </div>
-                <a href="#">خرید پکیج</a>
+                <a href="#" id="buyButton">خرید پکیج</a>
             </div>
             <div class="img">
                 <img id="example2" src="assets/images/gif1.gif" rel:auto_play="1"/>
@@ -100,57 +100,57 @@
                            <span>با هر بار خرید، پروموشن رایگان دریافت کنید</span>
                            <p>برای شما بهترین کمپین را ایجاد خواهیم کرد و حرفه ی شما را به بیشترین درآمد می رسانیم. مدریت اکانت خود را به ما بسپارید</p>
                            <ul>
-                               <li><i class="tick icon">&#2714;</i><span>راه اندازی دقیق و حرفه ای کمپین</span></li>
-                               <li><i class="tick icon">&#2714;</i><span>مدریت رایگان کمپین</span></li>
-                               <li><i class="tick icon">&#2714;</i><span>مشاوره و پشتیبانی 24 ساعته</span></li>
-                               <li><i class="tick icon">&#2714;</i><span>آمار و اطلاعات دقیق</span></li>
-                               <li><i class="tick icon">&#2714;</i><span>گذارش گیری روزانه</span></li>
-                               <hr>
+                               <li><i class="tick icon">&#x2713;</i><span>راه اندازی دقیق و حرفه ای کمپین</span></li>
+                               <li><i class="tick icon">&#x2713;</i><span>مدریت رایگان کمپین</span></li>
+                               <li><i class="tick icon">&#x2713;</i><span>مشاوره و پشتیبانی 24 ساعته</span></li>
+                               <li><i class="tick icon">&#x2713;</i><span>آمار و اطلاعات دقیق</span></li>
+                               <li><i class="tick icon">&#x2713;</i><span>گذارش گیری روزانه</span></li>
+                               <br>
                                <li><i class="info icon">&#33;</i><span class="info">زمان محدود است فرصت را از دست ندید</span></li>
                            </ul>
-                           <button><i>&#9655;</i><span>مرحله بعد</span></button>
+                           <button id="next_button"><i>&#9655;</i><span>مرحله بعد</span></button>
                        </div>
                        <div class="formItems">
                            <div id="selectItems" class="formItem">
                                <ul class="items">
                                    <li class="item">
-                                       <div class="main">
-                                           <div class="circle unactive"></div>
-                                           <span>1000 دلار</span>
+                                       <a href="#" class="main selectItem" id="selectItem1">
+                                           <div class="circle"></div>
+                                           <span><b>۱۰۰۰</b> دلار</span>
                                            <i>&#43;</i>
                                            <div class="promotion">
-                                             <span class="first">1000 دلار</span>
+                                             <span class="first"><b>۱۰۰۰</b> دلار</span>
                                              <span class="second">پروموشن</span>
                                            </div>
                                            <div class="Vertical line"></div>
-                                           <span class="cost">۶۴,۵۷۲,۰۰۰ تومان</span>
-                                       </div>
+                                           <span class="cost"><b>۶۴,۵۷۲,۰۰۰</b> تومان</span>
+                                       </a>
                                    </li>
                                    <li class="item">
-                                       <div class="main">
-                                           <div class="circle unactive"></div>
-                                           <span>1000 دلار</span>
+                                       <a href="#" class="main selectItem active" id="selectItem2">
+                                           <div class="circle"></div>
+                                           <span><b>۱۰۰۰</b> دلار</span>
                                            <i>&#43;</i>
                                            <div class="promotion">
-                                             <span class="first">1000 دلار</span>
+                                             <span class="first"><b>۱۰۰۰</b> دلار</span>
                                              <span class="second">پروموشن</span>
                                            </div>
                                            <div class="Vertical line"></div>
-                                           <span class="cost">۶۴,۵۷۲,۰۰۰ تومان</span>
-                                       </div>
+                                           <span class="cost"><b>۶۴,۵۷۲,۰۰۰</b> تومان</span>
+                                       </a>
                                    </li>
                                    <li class="item">
-                                       <div class="main">
-                                           <div class="circle unactive"></div>
-                                           <span>1000 دلار</span>
+                                       <a href="#" class="main selectItem" id="selectItem3">
+                                           <div class="circle"></div>
+                                           <span><b>۱۰۰۰</b> دلار</span>
                                            <i>&#43;</i>
                                            <div class="promotion">
-                                             <span class="first">1000 دلار</span>
+                                             <span class="first"><b>۱۰۰۰</b> دلار</span>
                                              <span class="second">پروموشن</span>
                                            </div>
                                            <div class="Vertical line"></div>
-                                           <span class="cost">۶۴,۵۷۲,۰۰۰ تومان</span>
-                                       </div>
+                                           <span class="cost"><b>۶۴,۵۷۲,۰۰۰</b> تومان</span>
+                                       </a>
                                    </li>
                                </ul>
                            </div>
@@ -158,14 +158,11 @@
                             <div class="icon">
                                 <img src="assets/images/form-icon.svg" alt="form-icon" title="form-icon">
                             </div>
-                             <table>
                                 <form action="/action_page.php" id="admoonLandingForm">
+                                  <table>
                                     <tr>
                                         <td><input type="text" name="name" id="name" placeholder="نام و نام خانوادگی" required/></td>
                                         <td><input type="tel" name="phone" id="phone" placeholder="شماره تماس" required/></td>
-                                    </tr>
-                                    <tr>
-                                        
                                     </tr>
                                     <tr>
                                         <td><input type="url" name="website" id="website" placeholder="آدرس سایت" required/></td>
@@ -189,8 +186,8 @@
                                           <option value="telegram">تلگرام</option>
                                         </select>
                                     </tr>
+                                  </table>
                                 </form>
-                            </table>
                            </div>
                            <div id="registeredItems" class="formItem">
                                <img src="assets/images/true-icon.svg" alt="registered-icon" title="registered-icon">

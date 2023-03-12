@@ -13,13 +13,14 @@ body{background: #fff;position: relative;}
 .wrapper>header{background-color: #C0D2E0;padding-top: 50px;position: relative;overflow: hidden;}
 .wrapper>header>.circle-background{
     position: absolute;
-    right: 169px;
-    top: 139px;
+    right: -5%;
+    top: -20%;
     background-color: #d0e1ee;
-    width: 450px;
-    height: 450px;
-    border-radius: 304px;
+    width: 55%;
+    aspect-ratio: 2 / 2;
+    border-radius: 100%;
     z-index: 0;
+    transition: all 1s;
 }
 .wrapper>header>.container{
     position: relative;
@@ -71,7 +72,7 @@ body{background: #fff;position: relative;}
     z-index: 1;
 }
 
-.wrapper>header .header>.content h1 span::before{content: '';background-image: url(../images/back-text.svg);background-repeat: no-repeat;z-index: -1;background-size: contain;width: 100%;height: 40px;position: absolute;}
+.wrapper>header .header>.content h1 span::before{content: '';background-image: url(../images/back-text.svg);background-repeat: no-repeat;z-index: -1;background-size: contain;width: 100%;height: 30px;position: absolute;top: 24px;}
 .wrapper>header .header>.content p{
     font-size: 14px;
     color: #80939c;
@@ -97,7 +98,7 @@ body{background: #fff;position: relative;}
 .wrapper>header .header>.content a{
     display: flex;
     width: 150px;
-    height: 56px;
+    height: 48px;
     border-radius: 7px;
     background-color: #ffffff;
     font-size: 16px;
@@ -106,21 +107,47 @@ body{background: #fff;position: relative;}
     font-family: "IRANSans";
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
 }
 
+#buyButton::before{
+    content: '';
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    transition: all .5s;
+    background: #fabb04;
+    z-index: -1;
+    border-radius: 7px;
+}
+#buyButton:hover::before{
+    width: 100%;
+    height: 100%;
+}
 .wrapper>header .header>.content a:hover{
     color: white;
-    background: #fabb04;
     transform: scale(1.05);
 }
 
 .wrapper>header .header>.img{
     text-align: left;
+    margin-bottom: 80px;
 }
-.wrapper>header .header>.img x-gif{
-    max-width: 80%;
+.wrapper>header .header>.img div{
+    
 }
+
+.wrapper>header .header>.img canvas{
+    max-width: 70%;
+}
+
 .wrapper>main{}
 
 #sec_1{
@@ -132,7 +159,7 @@ body{background: #fff;position: relative;}
     display: flex;
 }
 #sec_1>.container>.form>.main>.content{
-    width: 30%;
+    width: 45%;
 }
 #sec_1>.container>.form>.main>.content>h3{
     font-size: 35px;
@@ -207,40 +234,114 @@ body{background: #fff;position: relative;}
 }
 #sec_1>.container>.form>.main>.content>button.active{}
 #sec_1>.container>.form>.main>.content>button.unactive{}
-#sec_1>.container>.form>.main>.formItems{}
+#sec_1>.container>.form>.main>.formItems{
+    width: 50%;
+}
 #sec_1>.container>.form>.main>.formItems>.formItem{}
 
-#selectItems{}
+#selectItems{display:none;}
 #selectItems>ul.items{}
-#selectItems>ul.items>li.item{}
-#selectItems>ul.items>li.item>.main{}
-#selectItems>ul.items>li.item>.main>.circle{}
+#selectItems>ul.items>li.item{
+    padding: 10px 30px;
+}
+#selectItems>ul.items>li.item>.main{
+    border: 2px solid #FABB04;
+    border-radius: 22px;
+    padding: 21px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    font: normal normal normal 23px/35px IRANSans;
+    letter-spacing: 0px;
+    color: #777474;
+}
+#selectItems>ul.items>li.item>.main>.circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 1px solid #FABB04;
+    background-color: white;
+}
+/*
 #selectItems>ul.items>li.item>.main>.circle.unactive{}
 #selectItems>ul.items>li.item>.main>.circle.active{}
-#selectItems>ul.items>li.item>.main>span{}
+*/
+#selectItems>ul.items>li.item>.main>span{font-weight: 300;font-size: 20px;}
+#selectItems>ul.items>li.item>.main>span>b{
+    font-weight: 900;
+    font-size: 21px;
+}
 #selectItems>ul.items>li.item>.main>i{}
-#selectItems>ul.items>li.item>.main>.promotion{}
-#selectItems>ul.items>li.item>.main>.promotion>span{}
-#selectItems>ul.items>li.item>.main>.promotion>span.first{}
+#selectItems>ul.items>li.item>.main>.promotion{
+    display: flex;
+    flex-direction: column;
+}
+#selectItems>ul.items>li.item>.main>.promotion>span{
+    font-weight: 300;
+    font-size: 20px;
+}
+#selectItems>ul.items>li.item>.main>.promotion>span>b{
+    font-weight: 900;
+    font-size: 25px;
+}
+#selectItems>ul.items>li.item>.main>.promotion>span.first{
+    color: #FABB04;
+}
 #selectItems>ul.items>li.item>.main>.promotion>span.second{}
-#selectItems>ul.items>li.item>.main>.Vertical.line{}
-#selectItems>ul.items>li.item>.main>.cost{}
+#selectItems>ul.items>li.item>.main>.Vertical.line{
+    height: 70px;
+    width: .1px;
+    background-color: #b7b7b7;
+    display: inline-block;
+    position: relative;
+}
+#selectItems>ul.items>li.item>.main>.cost{
+    font-size: 16px;
+}
 
-#formInputs{}
-#formInputs>.icon{}
-#formInputs>.icon>img{}
+
+#selectItems>ul.items>li.item>.selectItem.active{background-color: #fabb04;}
+#selectItems>ul.items>li.item>.selectItem.active>.circle{}
+#selectItems>ul.items>li.item>.selectItem.active>span{color:white !important;}
+#selectItems>ul.items>li.item>.selectItem.active>span>b{color:white !important;}
+#selectItems>ul.items>li.item>.selectItem.active>i{color:white !important;}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion{}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion>span{}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion>span>b{}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion>span.first{color:#434343 !important;}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion>span.second{color:white !important;}
+#selectItems>ul.items>li.item>.selectItem.active>.Vertical.line{background-color:white !important;}
+#selectItems>ul.items>li.item>.selectItem.active>.cost{}
+
+#formInputs{
+    padding: 10px 30px;
+}
+#formInputs>.icon{
+    border-radius: 15px;
+    background-color: #34a753;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#formInputs>.icon>img{
+    margin: 35px;
+    max-width: 100px;
+}
 #formInputs>table{}
-#formInputs>table>from{}
-#formInputs>table>from>tr{}
-#formInputs>table>from>tr>td{}
-#formInputs>table>from>tr>td>input{}
-#formInputs>table>from>tr>td>input[type="text"]{}
-#formInputs>table>from>tr>td>input[type="tel"]{}
-#formInputs>table>from>tr>td>input[type="url"]{}
-#formInputs>table>from>tr>td>input[type="text"].keysName{}
-#formInputs>table>from>tr>td>select{}
-#formInputs>table>from>tr>td>#costs{}
-#formInputs>table>from>tr>td>select>option{}
+#formInputs>form>table{}
+#formInputs>form>table>tr{}
+#formInputs>form>table>tr>td{}
+#formInputs>form>table>tr>td>input{}
+#formInputs>form>table>tr>td>input[type="text"]{}
+#formInputs>form>table>tr>td>input[type="tel"]{}
+#formInputs>form>table>tr>td>input[type="url"]{}
+#formInputs>form>table>tr>td>input[type="text"].keysName{}
+#formInputs>form>table>tr>td>select{}
+#formInputs>form>table>tr>td>#costs{}
+#formInputs>form>table>tr>td>select>option{}
 
 #registeredItems{}
 #registeredItems img{}
