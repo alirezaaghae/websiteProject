@@ -53,17 +53,20 @@
 </head>
 <body>
 <div class="wrapper index-page" id="main-page">
-    <header>
+    <header id="headerhome">
       <div class="circle-background"></div>
        <div class="container">
         <nav>
             <ul class="items">
-                <li class="item"><a href="#">خانه</a></li>
-                <li class="item"><a href="#">پکیج ها</a></li>
-                <li class="item"><a href="#">درباره کمپین</a></li>
-                <li class="item"><a href="#">سوالات متداول</a></li>
+                <li class="item"><a href="#headerhome">خانه</a></li>
+                <li class="item"><a href="#sec_1">پکیج ها</a></li>
+                <li class="item"><a href="#sec_2">درباره کمپین</a></li>
+                <li class="item"><a href="#sec_3">سوالات متداول</a></li>
             </ul>
-            <div class="logo"><img src="assets/images/logo.svg" alt="admoon_logo" title="admoon logo"></div> 
+            <div class="logo">
+            <img src="assets/images/logo.svg" alt="admoon_logo" title="admoon logo">
+            <img style="display: none;" src="assets/images/second-logo.svg" alt="admoon_logo" title="second logo">
+            </div> 
         </nav>
         <div class="header">
             <div class="content">
@@ -73,7 +76,7 @@
                     <img src="assets/images/info-icon.svg" alt="info-icon" title="info-icon">
                     <span>فقط برای مدت محدود</span>
                 </div>
-                <a href="#" id="buyButton">خرید پکیج</a>
+                <a href="#sec_1" id="buyButton">خرید پکیج</a>
             </div>
             <div class="img">
                 <img id="example2" src="assets/images/gif1.gif" rel:auto_play="1"/>
@@ -108,13 +111,12 @@
                                <br>
                                <li><i class="info icon">&#33;</i><span class="info">زمان محدود است فرصت را از دست ندید</span></li>
                            </ul>
-                           <button id="next_button"><i>&#9655;</i><span>مرحله بعد</span></button>
                        </div>
                        <div class="formItems">
-                           <div id="selectItems" class="formItem">
+                           <div id="selectItems" class="formItem show">
                                <ul class="items">
                                    <li class="item">
-                                       <a href="#" class="main selectItem" id="selectItem1">
+                                       <a href="#" onclick="return false;" class="main selectItem" id="selectItem1">
                                            <div class="circle"></div>
                                            <span><b>۱۰۰۰</b> دلار</span>
                                            <i>&#43;</i>
@@ -127,7 +129,7 @@
                                        </a>
                                    </li>
                                    <li class="item">
-                                       <a href="#" class="main selectItem active" id="selectItem2">
+                                       <a href="#" onclick="return false;" class="main selectItem" id="selectItem2">
                                            <div class="circle"></div>
                                            <span><b>۱۰۰۰</b> دلار</span>
                                            <i>&#43;</i>
@@ -140,7 +142,7 @@
                                        </a>
                                    </li>
                                    <li class="item">
-                                       <a href="#" class="main selectItem" id="selectItem3">
+                                       <a href="#" onclick="return false;" class="main selectItem" id="selectItem3">
                                            <div class="circle"></div>
                                            <span><b>۱۰۰۰</b> دلار</span>
                                            <i>&#43;</i>
@@ -154,7 +156,7 @@
                                    </li>
                                </ul>
                            </div>
-                           <div id="formInputs" class="formItem">
+                           <div id="formInputs" class="formItem hidden">
                             <div class="icon">
                                 <img src="assets/images/form-icon.svg" alt="form-icon" title="form-icon">
                             </div>
@@ -167,6 +169,7 @@
                                     <tr>
                                         <td><input type="url" name="website" id="website" placeholder="آدرس سایت" required/></td>
                                         <td>
+                                        <div class="selectStyle">
                                          <select id="costs" name="costs" form="admoonLandingForm">
                                           <option value="" disabled selected>میزان مصرف روزانه</option>
                                           <option value="300">300$</option>
@@ -174,40 +177,48 @@
                                           <option value="1000">1000%</option>
                                           <option value="5000">5000$</option>
                                          </select>
+                                         </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" name="keysName" id="keysName" placeholder="کلمات کلیدی"/></td>
+                                        <td colspan="2" class="fullWidth"><input type="text" name="keysName" id="keysName" placeholder="کلمات کلیدی"/></td>
                                     </tr>
                                     <tr>
-                                        <select id="costs" name="costs" form="admoonLandingForm">
-                                          <option value="" disabled selected>نحوه ی ارتباط</option>
-                                          <option value="whatsapp">واتس اپ</option>
-                                          <option value="telegram">تلگرام</option>
-                                        </select>
+                                       <td colspan="2" class="fullWidth"> 
+                                         <div class="selectStyle">
+                                             <select id="socials" name="socials" onchange="enableNextButton()" form="admoonLandingForm">
+                                                  <option value="" disabled selected>نحوه ی ارتباط</option>
+                                                  <option value="whatsapp">واتس اپ</option>
+                                                  <option value="telegram">تلگرام</option>
+                                             </select> 
+                                         </div>
+                                       </td>
                                     </tr>
                                   </table>
                                 </form>
                            </div>
-                           <div id="registeredItems" class="formItem">
+                           <div id="registeredItems" class="formItem hidden">
+                              <div>
                                <img src="assets/images/true-icon.svg" alt="registered-icon" title="registered-icon">
                                <span>سفارش شما با موفقیت ثبت شد</span>
-                               <p>کارشناس ما با شما ارتباط برقرار خواهند کرد</p>
+                               <p>کارشناسان ما با شما ارتباط برقرار خواهند کرد</p>
+                               </div>
                            </div>
+                           <button id="next_button" class="next"><i>▶</i><span>مرحله بعد</span></button>
                        </div>
                    </div>
                    <div class="states">
-                       <div class="state selection">
-                           <div id="selectionCircle" class="circle uncheck"></div>
-                           <div id="selectionLine" class="line uncheck"></div>
+                       <div class="state selection checked">
+                           <div id="selectionCircle" class="circle"></div>
+                           <div id="selectionLine" class="line"></div>
                        </div>
                        <div class="state inquiry">
-                           <div id="inquiryCircle" class="circle uncheck"></div>
-                           <div id="inquiryLine" class="line uncheck"></div>
+                           <div id="inquiryCircle" class="circle"></div>
+                           <div id="inquiryLine" class="line"></div>
                        </div>
                        <div class="state register">
-                           <div id="registerCircle" class="circle uncheck"></div>
-                           <div id="registerLine" class="line uncheck"></div>
+                           <div id="registerCircle" class="circle"></div>
+                           <div id="registerLine" class="line"></div>
                        </div>
                    </div>
                </div>
@@ -219,28 +230,28 @@
                <div class="methods">
                    <h2>روش کار ما چگونه است؟</h2>
                    <ul id="methodsItems" class="items row desktop">
-                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-24 col-sm-24 col-24">
                            <div class="overflow">
                                <div class="icon"><img src="assets/images/icon1-2.svg" alt=""></div>
                                <h3>گزارش دهی حرفه‌ای</h3>
                                <p>پشتیبانی حرفه‌ای ما هرگونه نگرانی را از بابت شفافیت رفع می‌کند. به کمک گزارش آنی پنل دیتا استودیو، شما می‌توانید در هر لحظه به آمار کمپین خود دسترسی داشته باشید.</p>
                            </div>
                        </li>
-                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-24 col-sm-24 col-24">
                            <div class="overflow">
                                <div class="icon"><img src="assets/images/icon2-2.svg" alt=""></div>
                                <h3>مدیریت و بهینه سازی پیشرفته</h3>
                                <p>از طریق مدیریت و بهینه سازی پیشرفته، نرخ تبدیل افزایش و هزینه هر کلیک کاهش خواهد یافت. تعهد ما اجرای یک کمپین نتیجه بخش و برتری میان رقبا خواهد بود.</p>
                            </div>
                        </li>
-                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-24 col-sm-24 col-24">
                            <div class="overflow">
                                <div class="icon"><img src="assets/images/icon3-2.svg" alt=""></div>
                                <h3>طراحی هدفمند کمپین</h3>
                                <p>طراحی هدفمند کمپین با استراتژی نتیجه محور، نوشتن متون جذاب تبلیغ و بهبود جایگاه سایت شما تنها بخشی از مزایای همکاری با تیم حرفه‌ای ما خواهد بود.</p>
                            </div>
                        </li>
-                       <li class="item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                       <li class="item col-xl-6 col-lg-6 col-md-24 col-sm-24 col-24">
                            <div class="overflow">
                                <div class="icon"><img src="assets/images/icon4-2.svg" alt=""></div>
                                <h3>تحلیل کسب و کار شما</h3>
@@ -370,10 +381,10 @@
             <div class="logo"><img src="assets/images/logo.svg" alt="admoonLogo" title="admoon Logo"></div>
             <nav>
                 <ul class="items">
-                    <li class="item"><a href="#">خانه</a></li>
-                    <li class="item"><a href="#">پکیج ها</a></li>
-                    <li class="item"><a href="#">درباره کمپین</a></li>
-                    <li class="item"><a href="#">سوالات متداول</a></li>
+                    <li class="item"><a href="#headerhome">خانه</a></li>
+                    <li class="item"><a href="#sec_1">پکیج ها</a></li>
+                    <li class="item"><a href="#sec_2">درباره کمپین</a></li>
+                    <li class="item"><a href="#sec_3">سوالات متداول</a></li>
                 </ul>
             </nav>
             <a id="footer_tel" href="tel:021">02122222222</a>

@@ -9,8 +9,338 @@
 
 @media only screen and (min-width: 320px) and (max-width: 760px) {
 /*    start code here   */
-    .wrapper{}
+    
+body{}
+.wrapper{}
+.wrapper>header{}
+.wrapper>header>.circle-background{
+    display: none;
 }
+.wrapper>header>.container{}
+.wrapper>header nav{}
+.wrapper>header nav>ul.items{
+    display: none;
+}
+.wrapper>header nav>ul.items>li.item{}
+.wrapper>header nav>ul.items>li.item>a{}
+.wrapper>header nav>ul.items>li.item>a:hover{}
+.wrapper>header nav>.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+.wrapper>header nav>.logo img{
+    max-width: 60px;
+    display: inherit !important;
+}
+.wrapper>header .header{
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.wrapper>header .header>.content{
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper>header .header>.content h1{}
+.wrapper>header .header>.content h1 span{}
+
+.wrapper>header .header>.content h1 span::before{}
+.wrapper>header .header>.content p{
+    line-height: 2;
+    margin: 20px;
+}
+.wrapper>header .header>.content .infoo{}
+.wrapper>header .header>.content .infoo img{}
+.wrapper>header .header>.content .infoo span{}
+.wrapper>header .header>.content a{}
+
+#buyButton::before{}
+#buyButton:hover::before{}
+.wrapper>header .header>.content a:hover{}
+.wrapper>header .header>.img{
+    margin-bottom: 0;
+    width: 100%;
+}
+.wrapper>header .header>.img div{
+    text-align: center;
+}
+
+.wrapper>header .header>.img canvas{
+    max-width: 100%;
+}
+
+.wrapper>main{}
+
+#sec_1{
+    padding: 70px 10px;
+}
+#sec_1>.container{}
+#sec_1>.container>.form{/* display: flex; *//* flex-direction: column-reverse; */}
+#sec_1>.container>.form>.main{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+#sec_1>.container>.form>.main>.content{
+    width: 100%;
+    margin-bottom: 30px;
+}
+#sec_1>.container>.form>.main>.content>h3{
+    text-align: center;
+}
+#sec_1>.container>.form>.main>.content>span{
+    text-align: center;
+    display: inherit;
+}
+#sec_1>.container>.form>.main>.content>p{
+    max-width: 100%;
+    text-align: center;
+}
+#sec_1>.container>.form>.main>.content>ul{}
+#sec_1>.container>.form>.main>.content>ul>li{}
+#sec_1>.container>.form>.main>.content>ul>li>i{}
+#sec_1>.container>.form>.main>.content>ul>li>i.icon{}
+#sec_1>.container>.form>.main>.content>ul>li>i.tick{}
+#sec_1>.container>.form>.main>.content>ul>li>i.info{}
+#sec_1>.container>.form>.main>.content>ul>li>span{}
+#sec_1>.container>.form>.main>.content>ul>li>span.info{}
+#next_button{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 60px;
+    margin-top: 20px;
+}
+#next_button.enable{}
+#next_button>i{}
+#next_button>span{}
+#next_button.active{}
+#next_button.unactive{}
+#sec_1>.container>.form>.main>.formItems{
+    width: 100%;
+}
+#sec_1>.container>.form>.main>.formItems>.formItem{}
+.formItem.hidden{}
+#selectItems{}
+#selectItems>ul.items{}
+#selectItems>ul.items>li.item{padding: 10px 0px;}
+#selectItems>ul.items>li.item>.main{
+    font: 20px IRANSans;
+    padding: 15px;
+}
+#selectItems>ul.items>li.item>.main>.circle{}
+/*
+#selectItems>ul.items>li.item>.main>.circle.unactive{}
+#selectItems>ul.items>li.item>.main>.circle.active{}
+*/
+#selectItems>ul.items>li.item>.main>span{
+    font-size: 14px;
+    font-weight: 400;
+}
+#selectItems>ul.items>li.item>.main>span>b{
+    font-size: 15px;
+}
+#selectItems>ul.items>li.item>.main>i{}
+#selectItems>ul.items>li.item>.main>.promotion{}
+#selectItems>ul.items>li.item>.main>.promotion>span{
+    font-size: 14px;
+    font-weight: 600;
+}
+#selectItems>ul.items>li.item>.main>.promotion>span>b{
+    font-size: 20px;
+}
+#selectItems>ul.items>li.item>.main>.promotion>span.first{}
+#selectItems>ul.items>li.item>.main>.promotion>span.second{}
+#selectItems>ul.items>li.item>.main>.Vertical.line{}
+#selectItems>ul.items>li.item>.main>.cost{
+    font-size: 14px;
+}
+
+
+#selectItems>ul.items>li.item>.selectItem.active{}
+#selectItems>ul.items>li.item>.selectItem.active>.circle{}
+#selectItems>ul.items>li.item>.selectItem.active>span{}
+#selectItems>ul.items>li.item>.selectItem.active>span>b{}
+#selectItems>ul.items>li.item>.selectItem.active>i{}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion{}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion>span{}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion>span>b{}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion>span.first{}
+#selectItems>ul.items>li.item>.selectItem.active>.promotion>span.second{}
+#selectItems>ul.items>li.item>.selectItem.active>.Vertical.line{}
+#selectItems>ul.items>li.item>.selectItem.active>.cost{}
+
+#formInputs{}
+#formInputs>.icon{}
+#formInputs>.icon>img{}
+#formInputs>table{}
+#formInputs>form{}
+#formInputs>form>table{}
+#formInputs>form>table tr{}
+#formInputs>form>table tr>td.fullWidth{}
+#formInputs>form>table tr>td.fullWidth input{}
+#formInputs>form>table tr>td.fullWidth select{}
+#formInputs>form>table tr>td{}
+#formInputs>form>table tr>td>input::placeholder{}
+#formInputs>form>table tr>td>input{}
+#formInputs>form>table tr>td>input[type="text"]{}
+#formInputs>form>table tr>td>input[type="tel"]{}
+#formInputs>form>table tr>td>input[type="url"]{}
+#formInputs>form>table tr>td>input[type="text"]#keysName{}
+#formInputs>form>table tr>td select{}
+#formInputs>form>table tr>td .selectStyle{}
+#formInputs>form>table tr>td .selectStyle::before{}
+#formInputs>form>table tr>td>#costs{}
+#formInputs>form>table tr>td select>option{}
+
+#registeredItems{}
+#registeredItems img{}
+#registeredItems span{}
+#registeredItems p{}
+    
+#sec_1>.container>.form>.states{
+}
+#sec_1>.container>.form>.states>.state{}
+#sec_1>.container>.form>.states>.state div{}
+#sec_1>.container>.form>.states>.state .uncheck{}
+#sec_1>.container>.form>.states>.state .checked{}
+#sec_1>.container>.form>.states>.state .checked::before{}
+#sec_1>.container>.form>.states>.state .circle.checked{}
+#sec_1>.container>.form>.states>.state.selection{}
+#sec_1>.container>.form>.states>.state.inquiry{}
+#sec_1>.container>.form>.states>.state.register{}
+#sec_1>.container>.form>.states>.state .circle{
+    position: absolute;
+    transform: translateX(-50px);
+    background: white;
+}
+#sec_1>.container>.form>.states>.state .line{}
+#sec_1>.container>.form>.states>.state .circle::before{
+    right: -22px;
+}
+#sec_1>.container>.form>.states>.state.selection .circle::before{}
+#sec_1>.container>.form>.states>.state.inquiry .circle::before{}
+#sec_1>.container>.form>.states>.state.register .circle::before{}
+
+#sec_2{}
+#sec_2>.main{
+    width: 100%;
+    border-radius: 0;
+    padding: 40px 0;
+}
+#sec_2>.main>.container{
+    padding: 0 20px;
+}
+#sec_2>.main>.container>.methods{}
+#sec_2>.main>.container>.methods>h2{}
+#sec_2>.main>.container>.methods>ul.items{
+    display: flex;
+    flex-direction: column;
+}
+#sec_2>.main>.container>.methods>ul.items.desktop{}
+#sec_2>.main>.container>.methods>ul.items>.item{
+    margin-bottom: 20px;
+    padding: 0 40px;
+}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow::before{}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(1)>.overflow::before{}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(2)>.overflow::before{}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(3)>.overflow::before{}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(4)>.overflow::before{}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(1)>.overflow{}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(2)>.overflow{}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(3)>.overflow{}
+#sec_2>.main>.container>.methods>ul.items>.item:nth-child(4)>.overflow{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>.icon{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>.icon>img{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>h3{}
+#sec_2>.main>.container>.methods>ul.items>.item>.overflow>p{}
+#sec_2>.main>.container>.dotslines{
+    display: none;
+}
+#sec_2>.main>.container>.dotslines>.up{}
+#sec_2>.main>.container>.dotslines>.up div{}
+#sec_2>.main>.container>.dotslines>.up div:nth-child(1){}
+#sec_2>.main>.container>.dotslines>.up div:nth-child(2){}
+#sec_2>.main>.container>.dotslines>.up div:nth-child(3){}
+#sec_2>.main>.container>.dotslines>.down{}
+#sec_2>.main>.container>.dotslines>.down div{}
+#sec_2>.main>.container>.dotslines>.down div:nth-child(1){}
+#sec_2>.main>.container>.dotslines>.down div:nth-child(2){}
+#sec_2>.main>.container>.Results{}
+#sec_2>.main>.container>.Results>h2{
+    font-size: 16px;
+    line-height: 2;
+}
+#sec_2>.main>.container>.Results>ul{
+    padding: 10px;
+}
+#sec_2>.main>.container>.Results>ul>li{
+    margin-bottom: 25px;
+}
+#sec_2>.main>.container>.Results>ul>li>.overflow{
+    text-align: center;
+}
+#sec_2>.main>.container>.Results>ul>li>.overflow>img{}
+#sec_2>.main>.container>.Results>ul>li>.overflow>span{}
+
+#sec_3{
+    padding: 50px 0;
+}
+#sec_3>.container{}
+#sec_3>.container>h2{}
+#sec_3>.container>.items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#sec_3>.container>.items .panel-group{
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+#sec_3>.container>.items .panel-group .panel-default{
+    border-radius: 15px;
+}
+#sec_3>.container>.items .panel-group .panel-default>div{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title{
+    line-height: 2;
+}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a>div{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a>div span{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a>div img{}
+#sec_3>.container>.items .panel-group .panel-default .panel-collapse{}
+#sec_3>.container>.items .panel-group .panel-default .panel-collapse .panel-body{}
+#sec_3>.container>.items .panel-group .panel-default .panel-collapse .panel-body p{}
+
+.wrapper>footer{}
+.wrapper>footer>.container{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper>footer>.container>.logo{}
+.wrapper>footer>.container>.logo>img{}
+.wrapper>footer>.container>nav{
+    margin: 30px 0;
+}
+.wrapper>footer>.container>nav>ul{}
+.wrapper>footer>.container>nav>ul>li{}
+.wrapper>footer>.container>nav>ul>li>a{}
+.wrapper>footer>.container>nav>ul>li>a:hover{}
+.wrapper>footer>.container>#footer_tel{}
+.wrapper>footer>.container>#footer_tel:hover{}}
 
 @media only screen and (max-width: 555px){
     /*  body{overflow-x: hidden;}  */
