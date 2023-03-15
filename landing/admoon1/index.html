@@ -53,7 +53,7 @@
 </head>
 <body>
 <div class="wrapper index-page" id="main-page">
-    <header id="headerhome">
+    <header id="headerhome" name="headerhome">
       <div class="circle-background"></div>
        <div class="container">
         <nav>
@@ -94,7 +94,7 @@
     </header>
     
     <main>
-       <section id="sec_1">
+       <section id="sec_1" name="sec_1">
            <div class="container">
                <div class="form">
                    <div class="main">
@@ -116,7 +116,7 @@
                            <div id="selectItems" class="formItem show">
                                <ul class="items">
                                    <li class="item">
-                                       <a href="#" onclick="return false;" class="main selectItem" id="selectItem1">
+                                       <a href="#" onclick="return false;" class="main selectItem" id="Package1">
                                            <div class="circle"></div>
                                            <span><b>۱۰۰۰</b> دلار</span>
                                            <i>&#43;</i>
@@ -129,7 +129,7 @@
                                        </a>
                                    </li>
                                    <li class="item">
-                                       <a href="#" onclick="return false;" class="main selectItem" id="selectItem2">
+                                       <a href="#" onclick="return false;" class="main selectItem" id="Package2">
                                            <div class="circle"></div>
                                            <span><b>۱۰۰۰</b> دلار</span>
                                            <i>&#43;</i>
@@ -142,7 +142,7 @@
                                        </a>
                                    </li>
                                    <li class="item">
-                                       <a href="#" onclick="return false;" class="main selectItem" id="selectItem3">
+                                       <a href="#" onclick="return false;" class="main selectItem" id="Package3">
                                            <div class="circle"></div>
                                            <span><b>۱۰۰۰</b> دلار</span>
                                            <i>&#43;</i>
@@ -160,33 +160,34 @@
                             <div class="icon">
                                 <img src="assets/images/form-icon.svg" alt="form-icon" title="form-icon">
                             </div>
-                                <form action="/action_page.php" id="admoonLandingForm">
+                                <form action="" id="admoonLandingForm">
+                                 <input type="hidden" name="itemSelected" id="itemSelected">
                                   <table>
                                     <tr>
-                                        <td><input type="text" name="name" id="name" placeholder="نام و نام خانوادگی" required/></td>
-                                        <td><input type="tel" name="phone" id="phone" placeholder="شماره تماس" required/></td>
+                                        <td><input type="text" name="name" id="name" onchange="enableNextButton()" placeholder="نام و نام خانوادگی" required/></td>
+                                        <td><input type="tel" name="phone" id="phone" onchange="enableNextButton()" placeholder="شماره تماس" required/></td>
                                     </tr>
                                     <tr>
-                                        <td><input type="url" name="website" id="website" placeholder="آدرس سایت" required/></td>
+                                        <td><input type="text" name="website" id="website" onchange="enableNextButton()" placeholder="آدرس سایت" required/></td>
                                         <td>
                                         <div class="selectStyle">
-                                         <select id="costs" name="costs" form="admoonLandingForm">
+                                         <select id="costs" name="costs" onchange="enableNextButton()" form="admoonLandingForm">
                                           <option value="" disabled selected>میزان مصرف روزانه</option>
                                           <option value="300">300$</option>
                                           <option value="500">500$</option>
-                                          <option value="1000">1000%</option>
+                                          <option value="1000">1000$</option>
                                           <option value="5000">5000$</option>
                                          </select>
                                          </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" class="fullWidth"><input type="text" name="keysName" id="keysName" placeholder="کلمات کلیدی"/></td>
+                                        <td colspan="2" class="fullWidth"><input type="text" name="key_words" id="key_words" onchange="enableNextButton()" placeholder="کلمات کلیدی"/></td>
                                     </tr>
                                     <tr>
                                        <td colspan="2" class="fullWidth"> 
                                          <div class="selectStyle">
-                                             <select id="socials" name="socials" onchange="enableNextButton()" form="admoonLandingForm">
+                                             <select id="social" name="social" onchange="enableNextButton()"  form="admoonLandingForm">
                                                   <option value="" disabled selected>نحوه ی ارتباط</option>
                                                   <option value="whatsapp">واتس اپ</option>
                                                   <option value="telegram">تلگرام</option>
@@ -195,6 +196,9 @@
                                        </td>
                                     </tr>
                                   </table>
+                                <!-- test -->
+<!--                                  <input type="submit" name="submit" id="submit" value="Submit">-->
+                                <!-- test -->
                                 </form>
                            </div>
                            <div id="registeredItems" class="formItem hidden">
@@ -224,7 +228,7 @@
                </div>
            </div>
        </section> 
-       <section id="sec_2">
+       <section id="sec_2" name="sec_2">
            <div class="main">
               <div class="container">
                <div class="methods">
@@ -303,7 +307,7 @@
               </div>
            </div>
        </section>
-       <section id="sec_3">
+       <section id="sec_3" name="sec_3">
            <div class="container">
                <h2>سوالات متداول</h2>
               <div class="items">

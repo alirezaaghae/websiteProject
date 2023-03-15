@@ -5,7 +5,7 @@
 * {margin: 0;padding: 0;}
 html {overflow-x: hidden;}
 html,body,button,input,optgroup,a,span,form,div,ul,li,p,strong,em,div,h1,h2,h3,h4,h5,h6,section,main,select,textarea {}
-a{transition:all .3s;}
+a{transition:all .3s;text-decoration: none;}
 /*    start code here   */
 
 body{background: #fff;position: relative;}
@@ -271,6 +271,7 @@ body{background: #fff;position: relative;}
     font: normal normal normal 23px/35px IRANSans;
     letter-spacing: 0px;
     color: #777474;
+    text-decoration: none;
 }
 #selectItems>ul.items>li.item>.main>.circle{
     width: 25px;
@@ -385,8 +386,7 @@ font-family: "IRANSans";
 #formInputs>form>table tr>td>input[type="text"]{}
 #formInputs>form>table tr>td>input[type="tel"]{}
 #formInputs>form>table tr>td>input[type="url"]{}
-#formInputs>form>table tr>td>input[type="text"]#keysName{
-}
+#formInputs>form>table tr>td>input[type="text"]#keysName{}
 #formInputs>form>table tr>td select{
     height: 100%;
     cursor: pointer;
@@ -399,6 +399,11 @@ font-family: "IRANSans";
     border: 1.5px solid #d2d2d2;
     background: transparent;
   -webkit-appearance: none;
+}
+#formInputs>form>table tr>td select option{
+font-size: 14px;
+color: #b9b9b9;
+font-family: "IRANSans";
 }
 #formInputs>form>table tr>td .selectStyle{
     position: relative;
@@ -645,7 +650,7 @@ font-family: "IRANSans";
     color: #3e3e3e;
     font-weight: 500;
 }
-#sec_3>.container>.items .panel-group .panel-default .panel-title a{}
+#sec_3>.container>.items .panel-group .panel-default .panel-title a{text-decoration: none;}
 #sec_3>.container>.items .panel-group .panel-default .panel-title a>div{
     display: flex;
     justify-content: space-between;
@@ -663,7 +668,7 @@ font-family: "IRANSans";
 #sec_3>.container>.items .panel-group .panel-default .panel-collapse .panel-body p{
     line-height: 2;
     color: #848484;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 14px;
 }
 

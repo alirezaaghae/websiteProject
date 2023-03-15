@@ -1,26 +1,27 @@
 // just get 11 number input
-var alireza = document.querySelectorAll(".alireza_validator input"),i;
+var alireza = document.querySelectorAll(".alireza_validator input"),
+    i;
 // Restricts input for the given textbox to the given inputFilter.
 function setInputFilter(textbox, inputFilter) {
-  ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
-    textbox.addEventListener(event, function() {
-      if (inputFilter(this.value)) {
-        this.oldValue = this.value;
-        this.oldSelectionStart = this.selectionStart;
-        this.oldSelectionEnd = this.selectionEnd;
-      } else if (this.hasOwnProperty("oldValue")) {
-        this.value = this.oldValue;
-        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
-      }
+  ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function (event) {
+        textbox.addEventListener(event, function () {
+            if (inputFilter(this.value)) {
+                this.oldValue = this.value;
+                this.oldSelectionStart = this.selectionStart;
+                this.oldSelectionEnd = this.selectionEnd;
+            } else if (this.hasOwnProperty("oldValue")) {
+                this.value = this.oldValue;
+                this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+            }
+        });
     });
-  });
 }
 for (i = 0; i < alireza.length; ++i) {
-  alireza[i].maxLength = 11;
-  // Restrict input to digits and '.' by using a regular expression filter.
-  setInputFilter(alireza[i], function(value) {
-  return /^[0-9۰-۹]*$/i.test(value);
-});
+    alireza[i].maxLength = 11;
+    // Restrict input to digits and '.' by using a regular expression filter.
+    setInputFilter(alireza[i], function (value) {
+        return /^[0-9۰-۹]*$/i.test(value);
+    });
 }
 
 
@@ -67,119 +68,179 @@ for (i = 0; i < alireza.length; ++i) {
 var itemSelected = '';
 var register = false;
 
-function ShowSelectItems(){
-    
-//  hide another
+function ShowSelectItems() {
+
+    //  hide another
     $("#formInputs").addClass("hidden").hasClass("show");
     $("#formInputs").removeClass("show");
     $("#registeredItems").addClass("hidden").hasClass("show");
     $("#registeredItems").removeClass("show");
-//  show
+    //  show
     $("#selectItems").addClass("show").not('.show');
     $("#selectItems").removeClass("hidden");
-    
+
     $("div.state.inquiry").removeClass("checked").hasClass("checked");
     $("div.state.register").removeClass("checked").hasClass("checked");
     return true;
 }
 
-function showFormInputs(){
-//  hide another
+function showFormInputs() {
+    //  hide another
     $("#selectItems").addClass("hidden").hasClass("show");
     $("#selectItems").removeClass("show");
     $("#registeredItems").addClass("hidden").hasClass("show");
     $("#registeredItems").removeClass("show");
-//  show
+    //  show
     $("#formInputs").addClass("show").not('.show');
     $("#formInputs").removeClass("hidden");
-    
+
     $("div.state.register").removeClass("checked").hasClass("checked");
     $("div.state.inquiry").addClass("checked").not(".checked");
     return true;
 }
 
-function showRegisteredItems(){
-//  hide
+function showRegisteredItems() {
+    //  hide
     $("#selectItems").addClass("hidden").hasClass("show");
     $("#selectItems").removeClass("show");
     $("#formInputs").addClass("hidden").hasClass("show");
     $("#formInputs").removeClass("show");
-//  show
+    //  show
     $("#registeredItems").addClass("show").not('.show');
     $("#registeredItems").removeClass("hidden");
-    
+
     $("div.state.inquiry").addClass("checked").not(".checked");
     $("div.state.register").addClass("checked").not(".checked");
     return true;
 }
 
-$(document).ready(function(){
-    $("#buyButton").mouseover(function() {
-    $("div.circle-background").css("transform","scale(5)")
-    }).mouseout(function() {
-       $("div.circle-background").css("transform","scale(1)")
+function sendAjaxForm() {
+    $('form').submit(function () {
+        return false;
     });
+    var name, phone, website, costs, key_words, social;
+    var returnerr = 'false';
+    var elm = $(this).parent();
+    var a = 'ld';
+    name = $('#name').val();
+    phone = $('#phone').val();
+    website = $('#website').val();
+    costs = $('#costs').val();
+    key_words = $('#key_words').val();
+    social = $('#social').val();
 
-
-    $("a.selectItem").click(function(){
-       var itemSelected = $(this).attr('id');
-
-       $("a.selectItem").removeClass("active");
-       $(this).addClass( "active" );
-       $("#next_button").addClass( "enable" ); 
-    });
-
-    $("#next_button").click(function(){
-       if ($("a.selectItem").hasClass("active")) {
-            if ($("#selectItems").hasClass("show")) {
-                $("#next_button").removeClass("enable");
-                return showFormInputs();
-                
-            }else if ($("#formInputs").hasClass("show") && register) {
-                $("#next_button").addClass("disable");
-                return showRegisteredItems();
-            }else {
-                $('input').each(function() {
-                    if(!$(this).val()){
-                        alert('لطفا تمام فیلد هارا پر کنید');
-                       return false;
-                    }else{
-//                        register = true;
-                    }
-                });
-            } if ($("#registeredItems").hasClass("show")) {
-                return null;
+            // page = window.location.href;
+            if (phone == '' || phone.length != 11) {
+                $('#name').addClass('error');
+                returnerr = 'true';
+                setTimeout(function () {
+                    $('.error').removeClass('error');
+                }, 1000);
             }
+            if (returnerr == 'true') {
+                return false;
+            }
+    $('#next_button').addClass('pending');
+    $('#next_button').prop('disabled', true);
+
+    // disable all forms when fill the form :|
+//     [beforAjax] $('#next_button').addClass('pending');
+//     [ajaxSuccess:] $('#next_button').removeClass('pending');$('form').addClass('success');
+    $.ajax({
+        url: 'form.php',
+        method: "POST",
+        data: {
+            'ajax': 'true',
+            'in': '5' + a,
+            'item': itemSelected,
+            'name': name,
+            'phone': phone,
+            'website': website,
+            'costs': costs,
+            'key_words': key_words,
+            'social': social
+        },
+        success: function (result) {
+            $('#next_button').addClass('disable');
+            elm.addClass('success');
+            // console.log(result);
+            showRegisteredItems();
+        }
+    });
+
+}
+
+$(document).ready(function () {
+
+    $("#buyButton").mouseover(function () {
+        $("div.circle-background").css("transform", "scale(5)")
+    }).mouseout(function () {
+        $("div.circle-background").css("transform", "scale(1)")
+    });
+
+
+    $("a.selectItem").click(function () {
+        itemSelected = $(this).attr('id');
+        $("a.selectItem").removeClass("active");
+        $(this).addClass("active");
+        $("#next_button").addClass("enable");
+    });
+
+    $("#next_button").click(function () {
+            if ($("a.selectItem").hasClass("active")) {
+                if ($("#selectItems").hasClass("show")) {
+                    $("#next_button").removeClass("enable");
+                    $("#itemSelected").attr('value', itemSelected);
+                    showFormInputs();
+
+                } else if ($("#formInputs").hasClass("show") && register && $('#costs').value!='' && $('#social').value!='') {
+                    sendAjaxForm();
+                } else {
+                    alert('لطفا تمام فیلد هارا پر کنید');
+                }
+            }
+    
+    if ($("#registeredItems").hasClass("show")) {
+        return null;
     }
-    });
-    
-    $("#selectionCircle").click(function(){
-        if ($('#formInputs').hasClass('show')){
-            return ShowSelectItems();
-        } else{
-            return false;
-        }
-    });
-    $("#inquiryCircle").click(function(){
-        if ($('#formInputs').hasClass('show')){
-            return showFormInputs();
-        } else{
-            return false;
-        }
-            
-    });
-    
 });
 
-function enableNextButton(){
-    $('input').each(function() {
-        if(!$(this).val()){
-            return false;
-        }else{
+$("#selectionCircle").click(function () {
+    if ($('#formInputs').hasClass('show')) {
+        return ShowSelectItems();
+    } else {
+        return false;
+    }
+});
+$("#inquiryCircle").click(function () {
+if (!$('#formInputs').hasClass('show')) {
+    if ($('#registeredItems').hasClass('show')) {
+        $("#next_button").removeClass("disable");
+        return showFormInputs();
+    }
+} else {
+    return false;
+}
+
+});
+
+});
+
+function enableNextButton() {
+    $("input").each(function() {
+        var element = $(this);
+        if (element.val() == "") {
+            register = false;
+            exit();
+        } else{
             register = true;
-            $("#next_button").removeClass("disable");
-            $("#next_button").addClass("enable");
         }
-     });
+    });
+    $("#next_button").removeClass("disable");
+    $("#next_button").addClass("enable");
+    
     
 }
+
+var isValid;
+
