@@ -34,8 +34,8 @@
     <!--  slider  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.min.css" />
-    <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <!--[if lt IE 10]>
@@ -58,42 +58,18 @@
     
     <main>
         <!-- Set up your HTML -->
-            <div class="owl-carousel">
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-              <div> Your Content </div>
-            </div>
+           
     </main>
     
     <footer class="site-footer footer-index" role="contentinfo">
         
     </footer>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>-->
+<script src="assets/js/jquery-3.6.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="assets/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/OwlCarousel/dist/owl.carousel.min.js"></script>
 <script src="assets/js/script.js" defer="defer"></script>
-<script>
-   var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items:4,
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:1000,
-        autoplayHoverPause:true
-    });
-    $('.play').on('click',function(){
-        owl.trigger('play.owl.autoplay',[1000])
-    })
-    $('.stop').on('click',function(){
-        owl.trigger('stop.owl.autoplay')
-    })
-</script>
 </body>
 
 </html>
