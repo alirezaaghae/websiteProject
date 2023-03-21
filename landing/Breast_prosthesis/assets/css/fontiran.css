@@ -76,3 +76,25 @@ This set of fonts are used in this project under the license: (.....)
 		 url('../fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 		 url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
 }
+/* MolsaqArabic */
+@font-face {
+	font-family: MolsaqArabic;
+	font-style: normal;
+	font-weight: 100;
+	src: url('../fonts/ttf/MolsaqArabic-ExtraLight.ttf');
+	src: url('../fonts/ttf/MolsaqArabic-ExtraLight') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/ttf/MolsaqArabic-Light.ttf');
+	src: url('../fonts/ttf/MolsaqArabic-Light') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/ttf/MolsaqArabic-ExtraBold.ttf');
+	src: url('../fonts/ttf/MolsaqArabic-ExtraBold') format('truetype');
+}
