@@ -62,115 +62,112 @@ for (i = 0; i < alireza.length; ++i) {
 //  });
 //});
 
-
-//admoon js 
-
-var itemSelected = '';
-var register = false;
-
-function ShowSelectItems() {
-
-    //  hide another
-    $("#formInputs").addClass("hidden").hasClass("show");
-    $("#formInputs").removeClass("show");
-    $("#registeredItems").addClass("hidden").hasClass("show");
-    $("#registeredItems").removeClass("show");
-    //  show
-    $("#selectItems").addClass("show").not('.show');
-    $("#selectItems").removeClass("hidden");
-
-    $("div.state.inquiry").removeClass("checked").hasClass("checked");
-    $("div.state.register").removeClass("checked").hasClass("checked");
-    return true;
-}
-
-function showFormInputs() {
-    //  hide another
-    $("#selectItems").addClass("hidden").hasClass("show");
-    $("#selectItems").removeClass("show");
-    $("#registeredItems").addClass("hidden").hasClass("show");
-    $("#registeredItems").removeClass("show");
-    //  show
-    $("#formInputs").addClass("show").not('.show');
-    $("#formInputs").removeClass("hidden");
-
-    $("div.state.register").removeClass("checked").hasClass("checked");
-    $("div.state.inquiry").addClass("checked").not(".checked");
-    return true;
-}
-
-function showRegisteredItems() {
-    //  hide
-    $("#selectItems").addClass("hidden").hasClass("show");
-    $("#selectItems").removeClass("show");
-    $("#formInputs").addClass("hidden").hasClass("show");
-    $("#formInputs").removeClass("show");
-    //  show
-    $("#registeredItems").addClass("show").not('.show');
-    $("#registeredItems").removeClass("hidden");
-
-    $("div.state.inquiry").addClass("checked").not(".checked");
-    $("div.state.register").addClass("checked").not(".checked");
-    return true;
-}
-
-function sendAjaxForm() {
-    $('form').submit(function () {
-        return false;
-    });
-    var name, phone, website, costs, key_words, social;
-    var returnerr = 'false';
-    var elm = $(this).parent();
-    var a = 'ld';
-    name = $('#name').val();
-    phone = $('#phone').val();
-    website = $('#website').val();
-    costs = $('#costs').val();
-    key_words = $('#key_words').val();
-    social = $('#social').val();
-
-            // page = window.location.href;
-            if (phone == '' || phone.length != 11) {
-                $('#name').addClass('error');
-                returnerr = 'true';
-                setTimeout(function () {
-                    $('.error').removeClass('error');
-                }, 1000);
+// Custome Select
+var x, i, j, l, ll, selElmnt, a, b, c;
+/* Look for any elements with the class "custom-select": */
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /* For each element, create a new DIV that will act as the selected item: */
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /* For each element, create a new DIV that will contain the option list: */
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /* For each option in the original select element,
+    create a new DIV that will act as an option item: */
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /* When an item is clicked, update the original select box,
+        and the selected item: */
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
             }
-            if (returnerr == 'true') {
-                return false;
-            }
-    $('#next_button').addClass('pending');
-    $('#next_button').prop('disabled', true);
-
-    // disable all forms when fill the form :|
-//     [beforAjax] $('#next_button').addClass('pending');
-//     [ajaxSuccess:] $('#next_button').removeClass('pending');$('form').addClass('success');
-    $.ajax({
-        url: 'form.php',
-        method: "POST",
-        data: {
-            'ajax': 'true',
-            'in': '5' + a,
-            'item': itemSelected,
-            'name': name,
-            'phone': phone,
-            'website': website,
-            'costs': costs,
-            'key_words': key_words,
-            'social': social
-        },
-        success: function (result) {
-            $('#next_button').addClass('disable');
-            elm.addClass('success');
-            // console.log(result);
-            showRegisteredItems();
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
         }
+        h.click();
     });
-
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+    /* When the select box is clicked, close any other select boxes,
+    and open/close the current select box: */
+    e.stopPropagation();
+    closeAllSelect(this);
+    this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-arrow-active");
+  });
 }
 
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
+function closeAllSelect(elmnt) {
+  /* A function that will close all select boxes in the document,
+  except the current select box: */
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
 
+/* If the user clicks anywhere outside the select box,
+then close all select boxes: */
+document.addEventListener("click", closeAllSelect);
+
+// firstSlider
+
+
+  $('.owl-carousel').owlCarousel({
+      rtl:true,
+      loop:true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      nav: true,
+      margin: 80,
+      navText : ["<div class='owl-next'><img src='assets/images/right_button.png' width='54px'></div>","<div class='owl-prev'><img src='assets/images/left_button.png' width='54px'></div>"],
+      responsive:{
+        0:{
+            items:2,
+            nav:false,
+            margin: 80
+        },
+        600:{
+            items:3,
+            margin: 30
+        },
+        1000:{
+            items:4,
+        }
+       }
+  });
