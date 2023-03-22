@@ -19,7 +19,7 @@ body{background: #fff;position: relative;}
 
 
 
-
+/* Custom Select */
 /* The container must be positioned relative: */
 .custom-select {
   position: relative;
@@ -85,3 +85,42 @@ body{background: #fff;position: relative;}
 .surgeryType .select-items div:nth-child(1){
     background-image: url(../images/first_select_text.png);
 }
+
+
+/* questions*/
+#sec_6>h2{
+    font-size: 30px;
+    color: #3e3e3e;
+    text-align: center;
+    font-weight: bold;
+}
+#sec_6>.items{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+}
+#sec_6>.items .panel-group{
+    width: 100%;
+    padding: 10px;
+}
+#sec_6>.items .panel-group .panel-default{
+    margin-top: 20px;
+}
+#sec_6>.items .panel-group .panel-default>div{}
+#sec_6>.items .panel-group .panel-default .panel-title{
+    font-size: 15px;
+    color: #3e3e3e;
+    font-weight: 500;
+}
+#sec_6>.items .panel-group .panel-default .panel-title a{text-decoration: none;}
+#sec_6>.items .panel-group .panel-default .panel-title a>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 25px 10px;
+}
+#sec_6>.items .panel-group .panel-default .panel-title a>div img{}
+#sec_6>.items .panel-group .panel-default .panel-collapse{}
+#sec_6>.items .panel-group .panel-default .panel-collapse .panel-body{}
+#sec_6>.items .panel-group .panel-default .panel-collapse .panel-body img{}

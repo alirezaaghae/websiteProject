@@ -147,27 +147,52 @@ document.addEventListener("click", closeAllSelect);
 // firstSlider
 
 
-  $('.owl-carousel').owlCarousel({
+  $('.owl-carousel.first').owlCarousel({
       rtl:true,
       loop:true,
       dots: false,
       autoplay: true,
-      autoplayTimeout: 5000,
+      autoplayTimeout: 6000,
       nav: true,
       margin: 80,
       navText : ["<div class='owl-next'><img src='assets/images/right_button.png' width='54px'></div>","<div class='owl-prev'><img src='assets/images/left_button.png' width='54px'></div>"],
       responsive:{
         0:{
-            items:2,
+            items:1,
             nav:false,
             margin: 80
         },
         600:{
-            items:3,
+            items:2,
             margin: 30
         },
         1000:{
-            items:4,
+            items:3,
+        }
+       }
+  });
+
+$('.owl-carousel.second').owlCarousel({
+      rtl:true,
+      loop:true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      nav: true,
+      margin: 80,
+      navText : ["<div class='owl-next'><img src='assets/images/right_button_cm.png' width='35px'></div>","<div class='owl-prev'><img src='assets/images/left_button_cm.png' width='35px'></div>"],
+      responsive:{
+        0:{
+            items:1,
+            nav:false,
+            margin: 80
+        },
+        600:{
+            items:2,
+            margin: 30
+        },
+        1000:{
+            items:3,
         }
        }
   });
