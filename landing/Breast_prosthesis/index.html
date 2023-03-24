@@ -60,10 +60,10 @@
                     <li><a href="#sec_2"><img src="assets/images/nav/2.svg" alt="nav menu"></a></li>
                     <li><a href="#sec_3"><img src="assets/images/nav/3.svg" alt="nav menu"></a></li>
                     <li><a href="#sec_5"><img src="assets/images/nav/4.svg" alt="nav menu"></a></li>
-                    <li><a href="#sec_5"><img src="assets/images/nav/5.svg" alt="nav menu"></a></li>
+                    <li><a href="#sec_4"><img src="assets/images/nav/5.svg" alt="nav menu"></a></li>
                     <li><a href="#sec_6"><img src="assets/images/nav/6.svg" alt="nav menu"></a></li>
                 </ul>
-                <img src="assets/images/logo.png" alt="logo">
+                <img class="logo" src="assets/images/logo.png" alt="logo">
             </nav>
             <section id="sec_1">
                 <div class="content">
@@ -112,7 +112,7 @@
                 <img class="desktop" src="assets/images/img_sec2_desktop.png">
                 <img class="mobile" src="assets/images/img_sec2_mobile.png">
             </div>
-            <div class="items">
+            <div class="itemsSec">
                 <ul class="row items">
                     <li class="item col-xl-8 col-lg-8 col-md-24 col-sm-24 col-24">
                         <div>
@@ -161,9 +161,9 @@
                 </div>
                 <div class="custom-select surgeryView" style="min-width:200px;">
                   <select>
-                    <option value="front">front</option>
-                    <option value="45degrees">45degrees</option>
-                    <option value="theSide">theSide</option>
+                    <option value="front">جلو</option>
+                    <option value="45degrees">۴۵ درجه</option>
+                    <option value="theSide">پهلو</option>
                   </select>
                 </div> 
             </div>
@@ -427,7 +427,7 @@
                         <li><a href="#sec_2"><img src="assets/images/nav/2.svg" alt="nav menu"></a></li>
                         <li><a href="#sec_3"><img src="assets/images/nav/3.svg" alt="nav menu"></a></li>
                         <li><a href="#sec_5"><img src="assets/images/nav/4.svg" alt="nav menu"></a></li>
-                        <li><a href="#sec_5"><img src="assets/images/nav/5.svg" alt="nav menu"></a></li>
+                        <li><a href="#sec_4"><img src="assets/images/nav/5.svg" alt="nav menu"></a></li>
                         <li><a href="#sec_6"><img src="assets/images/nav/6.svg" alt="nav menu"></a></li>
                     </ul>
                 </div>
@@ -440,6 +440,67 @@
             </div>
         </div>
     </footer>
+    <div class="adviceBody">
+        <div class="formBody">
+          <div class="topButtons">
+              <button id="toAdvicePage">درخواست مشاوره</button>
+              <button id="toWhatsappPage">واتس اپ</button>
+              <button id="toTelegramPage">تلگرم</button>
+          </div>
+          <div class="pages">
+             <div class="formPage">
+                <form action="" id="adviceForm">
+                    <div class="firstQS">
+                      <p>۱. شما چند سال دارید؟</p>
+                      <input type="radio" id="low25" name="age" value="low25">
+                      <label for="low25">کمتر از ۲۵ سال</label><br>
+                      <input type="radio" id="between25_35" name="age" value="between25_35">
+                      <label for="between25_35">بین ۲۵ تا ۳۵</label><br>
+                      <input type="radio" id="between35_50" name="age" value="between35_50">
+                      <label for="between35_50">بین ۳۵ تا ۵۰</label><br>
+                      <input type="radio" id="morethan35" name="age" value="morethan35">
+                      <label for="morethan35">بیشتر از ۳۵ سال</label>
+                    </div>
+                    <div class="secondQS">
+                      <p>۲.آیا قصد جراحی تا ۶ ماه آینده را دارید؟</p>
+                      <input type="radio" id="yesbabe" name="goingTo" value="Yes">
+                      <label for="yesbabe">بله</label><br>
+                      <input type="radio" id="nobabe" name="goingTo" value="No">
+                      <label for="nobabe">خیر</label>
+                    </div>
+                    <div class="thirdQS">
+                       <p>۳. شماره خود را وارد کنید</p>
+                       <input type="tel" name="phone" id="phone" onchange="enableInputButton()" placeholder="شماره تلفن همراه" required>
+                       <button id="Input_button" class="InputButton"><span>ثبت درخواست</span></button>
+                    </div>
+                    <div class="successQS">
+                        <img src="assets/images/flower_vectore.svg" alt="flower_vectore">
+                        <span>درخواست شما ثبت</span>
+                        <p>ممنون که ما را انتخاب کردید<br>متخصصان ما با شما تماس خواهند گفت</p>
+                        <button class="closeFormButton">ادامه</button>
+                    </div>
+                </form>
+                <button class="backbutton"><img src="assets/images/backButton.svg" alt="back_button"></button>
+               </div>
+               <div class="whatsappPage">
+                   <div class="content">
+                       <img src="assets/images/whatsapp.png" alt="whatsapp">
+                       <p>از طریق واتس اپ <br>با متخصصان ما در ارتباط باشید</p>
+                       <a href="https://wa.me/+989120164372?text=سلام دکتر!">
+                           ارتباط واتس اپ
+                       </a>
+                   </div>
+               </div>
+               <div class="telegramPage">
+                   <img src="assets/images/telegram.png" alt="telegram">
+                   <p>از طریق تلگرام <br>با متخصصان ما در ارتباط باشید</p>
+                   <a href="https://t.me/drajavdani">ارتباط تلگرام</a>
+               </div> 
+          </div>
+           
+        </div>
+        <button class="closeFormButton false"><img src="assets/images/false_icon.svg" alt="close form"></button>
+    </div>
 </div>
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>-->
 <script src="assets/js/jquery-3.6.4.min.js"></script>

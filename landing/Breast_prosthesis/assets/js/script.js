@@ -72,7 +72,7 @@ for (i = 0; i < l; i++) {
   ll = selElmnt.length;
   /* For each element, create a new DIV that will act as the selected item: */
   a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
+  a.setAttribute("class", "select-selected first");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
   /* For each element, create a new DIV that will contain the option list: */
@@ -150,12 +150,12 @@ document.addEventListener("click", closeAllSelect);
   $('.owl-carousel.first').owlCarousel({
       rtl:true,
       loop:true,
-      dots: false,
+      dots: true,
       autoplay: true,
       autoplayTimeout: 6000,
       nav: true,
       margin: 80,
-      navText : ["<div class='owl-next'><img src='assets/images/right_button.png' width='54px'></div>","<div class='owl-prev'><img src='assets/images/left_button.png' width='54px'></div>"],
+      navText : ["<img src='assets/images/right_button.svg' width='54px'>","<img src='assets/images/left_button.svg' width='54px'>"],
       responsive:{
         0:{
             items:1,
@@ -175,12 +175,12 @@ document.addEventListener("click", closeAllSelect);
 $('.owl-carousel.second').owlCarousel({
       rtl:true,
       loop:true,
-      dots: false,
+      dots: true,
       autoplay: true,
       autoplayTimeout: 6000,
       nav: true,
       margin: 80,
-      navText : ["<div class='owl-next'><img src='assets/images/right_button_cm.png' width='35px'></div>","<div class='owl-prev'><img src='assets/images/left_button_cm.png' width='35px'></div>"],
+      navText : ["<img src='assets/images/right_button_cm.svg' width='35px'>","<img src='assets/images/left_button_cm.svg' width='35px'>"],
       responsive:{
         0:{
             items:1,

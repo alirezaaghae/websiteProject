@@ -10,15 +10,64 @@ a{transition:all .3s;text-decoration: none;}
 
 body{background: #fff;position: relative;}
 .wrapper{position: relative;}
+.wrapper>header{}
+.wrapper>main{}
+.wrapper>main>.container{}
+.wrapper>main>.container>section{}
+.wrapper>header>container{}
+.wrapper nav{}
+.wrapper nav>ul{}
+.wrapper nav>ul>li{}
+.wrapper nav>ul>li>a{}
+.wrapper nav>ul>li>a:hover>img{}
+.wrapper nav>ul>li>a>img{}
+.wrapper>header img.logo{}
+.wrapper h2{}
 
+#sec_1{}
+#sec_1>.content{}
+#sec_1>.content>span{}
+#sec_1>.content>hr{}
+#sec_1>.content>h1{}
+#sec_1>.content>h1:after{content:'>>';display:inline-block;}
+#sec_1>.content>h2{}
+#sec_1>.content>.buttons{}
+#sec_1>.content>.buttons>a.first{}
+#sec_1>.content>.buttons>a.first:before{content:'';}
+#sec_1>.content>.buttons>a.second{}
+#sec_1>.content>.buttons>a.second:before{content:'';}
+#sec_1>.img{}
+#sec_1>.img>img{}
+#sec_1>.img>img::after{content:'';border-bottom: 2px dashed #FFA8C5; height:2px; width:100%; z-index:0; position:absolute; top:0; bottom:0; margin:auto;}
 
+#sec_2{}
+#sec_2>.icons{}
+#sec_2>.icons>ul.items{}
+#sec_2>.icons>ul.items>li.item{}
+#sec_2>.icons>ul.items>li.item>.img{}
+#sec_2>.icons>ul.items>li.item>.img>img{}
+#sec_2>.icons>ul.items>li.item>.text{}
+#sec_2>.icons>ul.items>li.item>.text>span{}
+#sec_2>.icons>ul.items>li.item>.text>b{}
+#sec_2>.body{}
+#sec_2>.body>h2{}
+#sec_2>.body>span{}
+#sec_2>.body>img{}
+.desktop{display: inherit;}
+.mobile{display: none;}
+#sec_2>.itemsSec{}
+#sec_2>.itemsSec>ul.items{}
+#sec_2>.itemsSec>ul.items>li.item{}
+#sec_2>.itemsSec>ul.items>li.item>div{}
+#sec_2>.itemsSec>ul.items>li.item>div>img{}
+#sec_2>.itemsSec>ul.items>li.item>div>span{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul>li{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul>li>img{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul>li>span{}
 
-
-
-
-
-
-
+#sec_3{}
+#sec_3>h2{}
 /* Custom Select */
 /* The container must be positioned relative: */
 .custom-select {
@@ -32,6 +81,11 @@ body{background: #fff;position: relative;}
 
 .select-selected {
   background-color: DodgerBlue;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
 }
 
 /* Style the arrow inside the select element: */
@@ -53,7 +107,7 @@ body{background: #fff;position: relative;}
 }
 
 /* style the items (options), including the selected item: */
-.select-items div,.select-selected {
+.select-items div{
   color: #ffffff;
   padding: 8px 16px;
   border: 1px solid transparent;
@@ -83,9 +137,43 @@ body{background: #fff;position: relative;}
 
 .selectButtons div{width: 100px;min-height:50px;}
 .surgeryType .select-items div:nth-child(1){
-    background-image: url(../images/first_select_text.png);
+    
 }
 
+#sec_3>.selectButtons{}
+#sec_3>.selectButtons>.custom-select{}
+#sec_3>.selectButtons>.custom-select>.select-selected{}
+#sec_3>.selectButtons>.custom-select>.select-selected:after{}
+#sec_3>.selectButtons>.custom-select>.select-items{}
+#sec_3>.selectButtons>.custom-select>.select-items>div{}
+#sec_3>.selectButtons>.surgeryType{}
+#sec_3>.selectButtons>.surgeryView{}
+#sec_3>.selectButtons>.surgeryType>.select-selected:before{content: "نوع عمل:";}
+#sec_3>.selectButtons>.surgeryView>.select-selected:before{content: "نمای جراحی:";}
+#sec_3>.selectButtons>.surgeryType>.select-selected.first{ background-image: url(../images/first_select_text.png);
+}
+#sec_3>.selectButtons>.surgeryType>.select-selected.second{ background-image: url(../images/second_select_text.png);
+}
+#sec_3>.selectButtons>.surgeryType>.select-selected.first + .select-items>div{ background-image: url(../images/second_select_text.png);
+}
+
+#sec_3>.selectButtons>.surgeryType>.select-selected.second + .select-items>div{background-image: url(../images/first_select_text.png);}
+
+#sec_3>.First-slider{}
+#sec_3>.First-slider>.owl-carousel.first{}
+#sec_3>.First-slider>.owl-carousel.first .item{}
+#sec_3>.First-slider>.owl-carousel.first .item img{}
+#sec_3>.First-slider>.owl-carousel.first .owl-stage-outer{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-prev{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-prev img{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-next{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-next img{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button.active{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button span{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button.active span{}
 
 /* questions*/
 #sec_6>h2{
