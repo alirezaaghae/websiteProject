@@ -9,6 +9,339 @@
 
 @media only screen and (min-width: 320px) and (max-width: 760px) {
     
+
+body{}
+.wrapper{}
+.wrapper>header{
+}
+.wrapper>main{}
+.wrapper>main>.container{}
+.wrapper>main>.container>section{}
+.wrapper>header>container{}
+.wrapper nav{
+}
+.wrapper nav>ul{
+}
+.wrapper nav>ul>li{
+}
+.wrapper nav>ul>li>a{
+}
+.wrapper nav>ul>li>a:hover>img{}
+.wrapper nav>ul>li>a>img{
+}
+.wrapper>header img.logo{
+    
+}
+.wrapper h2{}
+
+#sec_1{
+    
+}
+#sec_1>.content{
+   
+}
+#sec_1>.content>span{
+}
+#sec_1>.content>hr{}
+#sec_1>.content>h1{
+}
+#sec_1>.content>h1::after{}
+#sec_1>.content>h2{}
+#sec_1>.content>.buttons{}
+#sec_1>.content>.buttons>a.first{}
+#sec_1>.content>.buttons>a.first::before{}
+#sec_1>.content>.buttons>a.second{}
+#sec_1>.content>.buttons>a.second::before{}
+#sec_1>.img{
+    
+}
+#sec_1>.img>img{
+    
+}
+#sec_1>.img>img::after{}
+
+#sec_2{}
+#sec_2>.icons{}
+#sec_2>.icons>ul.items{}
+#sec_2>.icons>ul.items>li.item{}
+#sec_2>.icons>ul.items>li.item>.img{}
+#sec_2>.icons>ul.items>li.item>.img>img{}
+#sec_2>.icons>ul.items>li.item>.text{}
+#sec_2>.icons>ul.items>li.item>.text>span{}
+#sec_2>.icons>ul.items>li.item>.text>b{}
+#sec_2>.body{}
+#sec_2>.body>h2{}
+#sec_2>.body>span{}
+#sec_2>.body>img{}
+.desktop{}
+.mobile{}
+#sec_2>.itemsSec{}
+#sec_2>.itemsSec>ul.items{}
+#sec_2>.itemsSec>ul.items>li.item{}
+#sec_2>.itemsSec>ul.items>li.item>div{}
+#sec_2>.itemsSec>ul.items>li.item>div>img{}
+#sec_2>.itemsSec>ul.items>li.item>div>span{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul>li{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul>li>img{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul>li>span{}
+
+#sec_3{}
+#sec_3>h2{}
+/* Custom Select */
+/* The container must be positioned relative: */
+.custom-select {}
+
+.custom-select select {
+  
+}
+
+.select-selected {
+  
+}
+
+/* Style the arrow inside the select element: */
+.select-selected::after {
+  
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active::after {
+  
+}
+
+/* style the items (options), including the selected item: */
+.select-items div{
+  
+}
+
+/* Style items (options): */
+.select-items {
+  
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  
+}
+
+.select-items div:hover, .same-as-selected {
+}
+
+
+.selectButtons div{}
+.surgeryType .select-items div:nth-child(1){
+    
+}
+
+#sec_3>.selectButtons{}
+#sec_3>.selectButtons>.custom-select{}
+#sec_3>.selectButtons>.custom-select>.select-selected{}
+#sec_3>.selectButtons>.custom-select>.select-selected::after{}
+#sec_3>.selectButtons>.custom-select>.select-items{}
+#sec_3>.selectButtons>.custom-select>.select-items>div{}
+#sec_3>.selectButtons>.surgeryType{}
+#sec_3>.selectButtons>.surgeryView{}
+#sec_3>.selectButtons>.surgeryType>.select-selected::before{}
+#sec_3>.selectButtons>.surgeryView>.select-selected::before{}
+#sec_3>.selectButtons>.surgeryType>.select-selected.first{ 
+}
+#sec_3>.selectButtons>.surgeryType>.select-selected.second{ 
+}
+#sec_3>.selectButtons>.surgeryType>.select-selected.first + .select-items>div{ 
+}
+
+#sec_3>.selectButtons>.surgeryType>.select-selected.second + .select-items>div{}
+
+#sec_3>.First-slider{}
+#sec_3>.First-slider>.owl-carousel.first{}
+#sec_3>.First-slider>.owl-carousel.first .item{}
+#sec_3>.First-slider>.owl-carousel.first .item img{}
+#sec_3>.First-slider>.owl-carousel.first .owl-stage-outer{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-prev{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-prev img{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-next{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-next img{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button.active{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button span{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button.active span{}
+
+#sec_4{}
+#sec_4>.firstCover{}
+#sec_4>.firstCover{}
+#sec_4>.firstCover img{}
+#sec_4>.firstCover button{}
+#sec_4>.firstCover button::before{}
+#sec_4>.firstCover button:hover{}
+#sec_4>.firstCover button:hover before{}
+#sec_4>.aboutDr{}
+#sec_4>.aboutDr>.content{}
+#sec_4>.aboutDr>.content>h3{}
+#sec_4>.aboutDr>.content>span{}
+#sec_4>.aboutDr>.content>p{}
+#sec_4>.aboutDr>.img{}
+#sec_4>.aboutDr>.img img{}
+#sec_4>.aboutDr>.certificates{}
+#sec_4>.aboutDr>.certificates img{}
+
+#sec_5{}
+#sec_5>p{}
+#sec_5>p img{}
+#sec_5>ul{}
+#sec_5>ul.items{}
+#sec_5>ul.items>li.item{}
+#sec_5>ul.items>li.item>div{}
+#sec_5>ul.items>li.item>div>img{}
+
+/* questions*/
+#sec_6{}
+#sec_6>h2{
+    
+}
+#sec_6>.items{
+    
+}
+#sec_6>.items .panel-group{
+   
+}
+#sec_6>.items .panel-group .panel-default{
+    
+}
+#sec_6>.items .panel-group .panel-default>div{}
+#sec_6>.items .panel-group .panel-default .panel-title{
+}
+#sec_6>.items .panel-group .panel-default .panel-title a{}
+#sec_6>.items .panel-group .panel-default .panel-title a>div{
+}
+#sec_6>.items .panel-group .panel-default .panel-title a>div::after{}
+#sec_6>.items .panel-group .panel-default .panel-title a>div img{}
+#sec_6>.items .panel-group .panel-default .panel-collapse{}
+#sec_6>.items .panel-group .panel-default .panel-collapse .panel-body{}
+#sec_6>.items .panel-group .panel-default .panel-collapse .panel-body img{}
+
+#sec_7{}
+#sec_7 .secondCover{}
+#sec_7 .secondCover .bgcover{}
+#sec_7 .secondCover .bgcover img{}
+#sec_7 .secondCover .content{}
+#sec_7 .secondCover .content h3{}
+#sec_7 .secondCover .content>p{}
+#sec_7 .secondCover .content>p img{}
+#sec_7 .secondCover .content>p span{}
+#sec_7 .secondCover .content>ul.items{}
+#sec_7 .secondCover .content>ul.items>li.item{}
+#sec_7 .secondCover .content>ul.items>li.item a{}
+#sec_7 .secondCover .content>ul.items>li.item a div{}
+#sec_7 .secondCover .content>ul.items>li.item a div::before{}
+#sec_7 .secondCover .content>ul.items>li.item a img{}
+#sec_7 .secondCover .content>ul.items>li.item a span{}
+#sec_7 .secondCover .content>button{}
+
+#sec_8{}
+#sec_8 h2{}
+#sec_8 ul.items{}
+#sec_8 ul.items>li.item{}
+#sec_8 ul.items>li.item>div.img{}
+#sec_8 ul.items>li.item>div.img img{}
+#sec_8 ul.items>li.item>div.img img{}
+
+#sec_9{}
+#sec_9 h2{}
+#sec_9 .Second-slider{}
+#sec_9 .Second-slider .owl-carousel.second{}
+#sec_9 .Second-slider .owl-carousel.second .item{}
+#sec_9 .Second-slider .owl-carousel.second .item .content{}
+#sec_9 .Second-slider .owl-carousel.second .item .content .profile{}
+#sec_9 .Second-slider .owl-carousel.second .item .content .profile img{}
+#sec_9 .Second-slider .owl-carousel.second .item .content .profile span{}
+#sec_9 .Second-slider .owl-carousel.second .item .content .text{}
+#sec_9 .Second-slider .owl-carousel.second .item .content .text p{}
+#sec_9 .Second-slider .owl-carousel.second .owl-stage-outer{}
+#sec_9 .Second-slider .owl-carousel.second .owl-nav{}
+#sec_9 .Second-slider .owl-carousel.second .owl-nav .owl-prev{}
+#sec_9 .Second-slider .owl-carousel.second .owl-nav .owl-prev img{}
+#sec_9 .Second-slider .owl-carousel.second .owl-nav .owl-next{}
+#sec_9 .Second-slider .owl-carousel.second .owl-nav .owl-next img{}
+#sec_9 .Second-slider .owl-carousel.second .owl-dots{}
+#sec_9 .Second-slider .owl-carousel.second .owl-dots button{}
+#sec_9 .Second-slider .owl-carousel.second .owl-dots button.active{}
+#sec_9 .Second-slider .owl-carousel.second .owl-dots button span{}
+#sec_9 .Second-slider .owl-carousel.second .owl-dots button.active span{}
+
+.wrapper footer{}
+.wrapper footer>.container{}
+.wrapper footer>.container>.content{}
+.wrapper footer>.container>.content>.name{}
+.wrapper footer>.container>.content>.name h4{}
+.wrapper footer>.container>.content>.name span{}
+.wrapper footer>.container>.content>.nav{}
+.wrapper footer>.container>.content>.nav ul{}
+.wrapper footer>.container>.content>.nav ul li{}
+.wrapper footer>.container>.content>.nav ul li a{}
+.wrapper footer>.container>.content>.nav ul li a img{}
+.wrapper footer>.container>.content>.button{}
+.wrapper footer>.container>.content>.button button{}
+.wrapper footer>.container>.content>.button button::before{}
+.wrapper footer>.container>.content>.button button:hover{}
+.wrapper footer>.container>.info{}
+.wrapper footer>.container>.info .address{}
+.wrapper footer>.container>.info .address p{}
+.wrapper footer>.container>.info .number{}
+.wrapper footer>.container>.info .number a{}
+.wrapper footer>.container>.info .social{}
+.wrapper footer>.container>.info .social ul{}
+.wrapper footer>.container>.info .social ul li{}
+.wrapper footer>.container>.info .social ul li div{}
+.wrapper footer>.container>.info .social ul li div a{}
+.wrapper footer>.container>.info .social ul li div a:hover img{}
+.wrapper footer>.container>.info .social ul li div a img{}
+.wrapper footer>.container>.info .social ul li div a span{}
+
+.wrapper .adviceBody{}
+.wrapper .adviceBody .formBody{}
+.wrapper .adviceBody .formBody .topButtons{}
+.wrapper .adviceBody .formBody .topButtons #toAdvicePage{}
+.wrapper .adviceBody .formBody .topButtons #toWhatsappPage{}
+.wrapper .adviceBody .formBody .topButtons #toTelegramPage{}
+.wrapper .adviceBody .formBody .pages{}
+.wrapper .adviceBody .formBody .pages .formpage{}
+.wrapper .adviceBody .formBody .pages .formpage form{}
+.wrapper .adviceBody .formBody .pages .formpage form p{}
+.wrapper .adviceBody .formBody .pages .formpage form input{}
+.wrapper .adviceBody .formBody .pages .formpage form label{}
+.wrapper .adviceBody .formBody .pages .formpage form button{}
+
+.wrapper .adviceBody .formBody .pages .formpage form>.firstQS{}
+.wrapper .adviceBody .formBody .pages .formpage form>.secondQS{}
+.wrapper .adviceBody .formBody .pages .formpage form>.thirdQS{}
+.wrapper .adviceBody .formBody .pages .formpage form>.thirdQS input{}
+.wrapper .adviceBody .formBody .pages .formpage form>.thirdQS button.disable{}
+.wrapper .adviceBody .formBody .pages .formpage form>.successQS{}
+.wrapper .adviceBody .formBody .pages .formpage form>.successQS img{}
+.wrapper .adviceBody .formBody .pages .formpage form>.successQS span{}
+.wrapper .adviceBody .formBody .pages .formpage form>.successQS p{}
+.wrapper .adviceBody .formBody .pages .formpage .backbutton{}
+.wrapper .adviceBody .formBody .pages .formpage .backbutton img{}
+.wrapper .adviceBody .formBody .pages .whatsappPage{}
+.wrapper .adviceBody .formBody .pages .whatsappPage .content{}
+.wrapper .adviceBody .formBody .pages .whatsappPage .content img{}
+.wrapper .adviceBody .formBody .pages .whatsappPage .content p{}
+.wrapper .adviceBody .formBody .pages .whatsappPage .content a{}
+.wrapper .adviceBody .formBody .pages .telegramPage{}
+.wrapper .adviceBody .formBody .pages .telegramPage .content{}
+.wrapper .adviceBody .formBody .pages .telegramPage .content img{}
+.wrapper .adviceBody .formBody .pages .telegramPage .content p{}
+.wrapper .adviceBody .formBody .pages .telegramPage .content a{}
+.wrapper .adviceBody .closeFormButton{}
+
+
+
+
+
+
 }
 
 @media only screen and (max-width: 555px){
