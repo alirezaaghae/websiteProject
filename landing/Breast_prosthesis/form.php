@@ -12,9 +12,9 @@ if(!empty($_SERVER['HTTP_CLIENT_IP'])){$ip = $_SERVER['HTTP_CLIENT_IP'];}elseif(
 
 // database details
     $host = "localhost";
-    $username = "";
+    $username = "root";
     $password = "";
-    $dbname = "";
+    $dbname = "breast_prosthesis";
 
     // creating a connection
     $db_connection = mysqli_connect($host, $username, $password, $dbname);
@@ -29,15 +29,11 @@ if(!empty($_SERVER['HTTP_CLIENT_IP'])){$ip = $_SERVER['HTTP_CLIENT_IP'];}elseif(
     date_default_timezone_set('Asia/Tehran');
     $datetime=date('Y-m-d H:i:s');
 
-    $selected = $_POST['item'];
-    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $goingTo = $_POST['goingTo'];
     $phone = $_POST['phone'];
-    $website = $_POST['website'];
-    $charge = $_POST['costs'];
-    $key_words = $_POST['key_words'];
-    $social = $_POST['social'];
 
-    mysqli_query($db_connection,"INSERT INTO package (selected, name, phone, website, charge, key_words, social, date) VALUES ('$selected', '$name', '$phone', '$website', '$charge', '$key_words', '$social', '$datetime')");
+    mysqli_query($db_connection,"INSERT INTO package (age, goingTo, phone, date) VALUES ('$age', '$goingTo', '$phone', '$datetime')");
 
 
 
@@ -61,13 +57,9 @@ echo $sms_client->SendSimpleSMS2($parameters)->SendSimpleSMS2Result;
 }
 function smscompiler($string){
 global $selected,$name,$phone,$website,$charge,$key_words,$social;
-$string=str_replace('{selected}',$selected,$string);
-$string=str_replace('{name}',$name,$string);
+$string=str_replace('{age}',$age,$string);
+$string=str_replace('{goingTo}',$goingTo,$string);
 $string=str_replace('{phone}',$phone,$string);
-$string=str_replace('{website}',$website,$string);
-$string=str_replace('{charge}',$charge,$string);
-$string=str_replace('{key_words}',$key_words,$string);
-$string=str_replace('{social}',$social,$string);
 $string=str_replace('{datetime}',$datetime,$string);
 return $string;
 }

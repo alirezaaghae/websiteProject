@@ -3,7 +3,7 @@
 ::selection {color: #fff;background: #ffa2be;}
 :focus {outline: none;}
 * {margin: 0;padding: 0;}
-html {overflow-x: hidden;}
+html {overflow-x: hidden; scroll-behavior: smooth;}
 html,body,button,input,optgroup,a,span,form,div,ul,li,p,strong,em,div,h1,h2,h3,h4,h5,h6,section,main,select,textarea {}
 a{transition:all .3s;text-decoration: none;}
 /*    start code here   */
@@ -951,7 +951,7 @@ body{background: #fff;position: relative;}
 }
 .wrapper footer>.container>.info .social ul li div a span{}
 
-.shadowBG{position: fixed;background-color: #000000;opacity: 0.7;z-index:2;width:100%;height:100%;top: 0;}
+.shadowBG{position: fixed;background-color: #000000;opacity: 0.7;z-index:2;width:100%;height:100%;top: 0;display:none;}
 
 .wrapper .adviceBody{
     position: fixed;
@@ -959,8 +959,12 @@ body{background: #fff;position: relative;}
     top: 30px;
     bottom: 30px;
     margin: auto;
-    right: 30px;
+    right: -400px;
     display: flex;
+    transition: all 1s;
+}
+.wrapper .adviceBody.open{
+    right: 30px;
 }
 .wrapper .adviceBody .formBody{
     background: #FFFFFF;
@@ -1049,7 +1053,14 @@ body{background: #fff;position: relative;}
     justify-content: center;
     cursor: pointer;
     margin-bottom: 10px;
+    transition: all .3s;
 }
+
+.wrapper .adviceBody .formBody .pages .formPage form label:hover{
+    background-color: #ffa8c647;
+    border-color: #ffa8c6;
+}
+
 .wrapper .adviceBody .formBody .pages .formPage form button{
     min-height: 60px;
     border: none;
@@ -1063,6 +1074,15 @@ body{background: #fff;position: relative;}
     text-align: center;
     color: #FFFFFF;
     width: 100%;
+}
+
+.wrapper .adviceBody .formBody .pages .formPage form .InputButton{
+    background: #EFEFEF;
+}
+
+.wrapper .adviceBody .formBody .pages .formPage form .InputButton.enable{
+    background: #FFA8C6;
+    transition: all .3s;
 }
 
 .wrapper .adviceBody .formBody .pages .formPage form>.firstQS{display: none;align-items: center;flex-direction: column;justify-content: center;}
@@ -1083,7 +1103,7 @@ body{background: #fff;position: relative;}
     font-size: 14px;
     line-height: 31px;
     text-align: center;
-    color: #DCDCDC;
+    color: #7f7f7f;
     align-items: center;
     justify-content: center;
     text-align: right;

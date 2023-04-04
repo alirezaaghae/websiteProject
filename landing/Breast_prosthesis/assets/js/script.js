@@ -197,7 +197,90 @@ $('.owl-carousel.second').owlCarousel({
        }
   });
 
+function sendAjaxForm() {
+    $('form').submit(function () {
+        return false;
+    });
+    var age, goingTo, phone;
+    var elm = $(this).parent();
+    var a = 'ld';
+    age = $("input[name='age']:checked").val();
+    goingTo = $("input[name='goingTo']:checked").val();
+    phone = $('#phone').val();
+
+    $('.InputButton').addClass('pending');
+    $('.InputButton').prop('disabled', true);
+
+    // disable all forms when fill the form :|
+//     [beforAjax] $('#next_button').addClass('pending');
+//     [ajaxSuccess:] $('#next_button').removeClass('pending');$('form').addClass('success');
+    $.ajax({
+        url: 'form.php',
+        method: "POST",
+        data: {
+            'ajax': 'true',
+            'in': '5' + a,
+            'age': age,
+            'goingTo': goingTo,
+            'phone': phone
+        },
+        success: function (result) {
+            $('.InputButton').addClass('disable');
+            elm.addClass('success');
+            // console.log(result);
+            $('.thirdQS').removeClass('show');
+            $('.successQS').addClass('show');
+        }
+    });
+
+}
 
 $('.a-link').click(function() {
    $(this).toggleClass('on');
 });
+
+function changePage(c){
+//    var idName = c.id ;
+    $('.topButton').removeClass('active');
+    $(c).addClass('active');
+    $('.page').removeClass('show');
+    $('.'+c.id).addClass('show');
+}
+
+$('.shadowBG,.closeFormButton').click(function() {
+   $('.adviceBody').removeClass('open');
+   $('.shadowBG').hide();
+});
+
+
+$('.freeAdvice').click(function() {
+   $('.adviceBody').addClass('open');
+   $('.shadowBG').show();
+});
+
+$("#phone").keypress(function() {
+    if($(this).val().length == 11) {
+         $('#Input_button').addClass('enable')
+    } else {
+         $('#Input_button').removeClass('enable')
+    }
+});
+
+$('input[type="radio"]').on("click", function() {
+	if($("input:radio[name=age]").is(':checked')) {
+		$('.firstQS').removeClass('show');
+		$('.secondQS').addClass('show');
+        
+	} if($("input:radio[name=goingTo]").is(':checked')) {
+		$('.secondQS').removeClass('show');
+		$('.thirdQS').addClass('show');
+	}
+});
+
+$('.InputButton.enable').click(function() {
+   sendAjaxForm();
+});
+
+
+
+
