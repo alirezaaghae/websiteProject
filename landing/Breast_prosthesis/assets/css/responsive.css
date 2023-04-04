@@ -18,75 +18,124 @@ body{}
 .wrapper>main>.container{}
 .wrapper>main>.container>section{}
 .wrapper>header>container{}
-.wrapper nav{
-}
-.wrapper nav>ul{
-}
+.wrapper nav{flex-direction: row-reverse;padding: 0 20px;}
+.wrapper nav>ul{position: fixed;top: 0;right: 0;display: flex;flex-direction: column;width: 100%;height: 100%;background-color: #ffa1bf;justify-content: space-evenly;/* display: none; */z-index: 2;padding: 120px 0;}
 .wrapper nav>ul>li{
 }
-.wrapper nav>ul>li>a{
-}
+.wrapper nav>ul>li>a{margin: 0;background-color: #f689ac;width: 130px;border-radius: 10px;display: inline-block;text-align: center;padding: 20px 0;}
 .wrapper nav>ul>li>a:hover>img{}
 .wrapper nav>ul>li>a>img{
 }
 .wrapper>header img.logo{
-    
+    height: 50px;
 }
-.wrapper h2{}
+.wrapper h2{
+    font-size: 28px;
+}
 
 #sec_1{
-    
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 #sec_1>.content{
-   
+   margin-top: 30px;
 }
-#sec_1>.content>span{
-}
+#sec_1>.content>span{text-align: center;font-size: 37px;}
 #sec_1>.content>hr{}
-#sec_1>.content>h1{
+#sec_1>.content>h1{text-align: center;font-size: 25px;}
+#sec_1>.content>h1::after{
+    right: 0;
 }
-#sec_1>.content>h1::after{}
-#sec_1>.content>h2{}
-#sec_1>.content>.buttons{}
-#sec_1>.content>.buttons>a.first{}
+#sec_1>.content>h2{font-family: 'IRANSans' !important;font-weight: 400;}
+#sec_1>.content>.buttons{
+    display: flex;
+}
+#sec_1>.content>.buttons>a.first{
+    width: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #sec_1>.content>.buttons>a.first::before{}
-#sec_1>.content>.buttons>a.second{}
+#sec_1>.content>.buttons>a.second{
+    width: 50%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #sec_1>.content>.buttons>a.second::before{}
 #sec_1>.img{
-    
+    width: 80%;
 }
 #sec_1>.img>img{
-    
+    width: 100%;
 }
-#sec_1>.img>img::after{}
-
+    #sec_1>.img::after{display:none;}
 #sec_2{}
-#sec_2>.icons{}
-#sec_2>.icons>ul.items{}
-#sec_2>.icons>ul.items>li.item{}
-#sec_2>.icons>ul.items>li.item>.img{}
+#sec_2>.icons{
+    margin: 40px 0;
+}
+#sec_2>.icons>ul.items{
+}
+#sec_2>.icons>ul.items>li.item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#sec_2>.icons>ul.items>li.item>.img{
+    margin-left: 0;
+}
 #sec_2>.icons>ul.items>li.item>.img>img{}
-#sec_2>.icons>ul.items>li.item>.text{}
+#sec_2>.icons>ul.items>li.item>.text{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
 #sec_2>.icons>ul.items>li.item>.text>span{}
 #sec_2>.icons>ul.items>li.item>.text>b{}
-#sec_2>.body{}
-#sec_2>.body>h2{}
-#sec_2>.body>span{}
-#sec_2>.body>img{}
+#sec_2>.body{
+    position: relative;
+}
+#sec_2>.body>h2{
+    font-size: 24px;
+}
+#sec_2>.body>span{
+    width: 84%;
+    line-height: 2;
+}
+#sec_2>.body>img{
+    max-width: inherit;
+    width: 80%;
+}
 .desktop{}
-.mobile{}
-#sec_2>.itemsSec{}
+.mobile{
+    display: inherit;
+    margin: 20px 0;
+}
+#sec_2>.itemsSec{
+    margin-top: 50px;
+}
 #sec_2>.itemsSec>ul.items{}
 #sec_2>.itemsSec>ul.items>li.item{}
 #sec_2>.itemsSec>ul.items>li.item>div{}
 #sec_2>.itemsSec>ul.items>li.item>div>img{}
 #sec_2>.itemsSec>ul.items>li.item>div>span{}
-#sec_2>.itemsSec>ul.items>li.item>div>ul{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul{
+    margin-top: 20px;
+}
 #sec_2>.itemsSec>ul.items>li.item>div>ul>li{}
 #sec_2>.itemsSec>ul.items>li.item>div>ul>li>img{}
 #sec_2>.itemsSec>ul.items>li.item>div>ul>li>span{}
 
-#sec_3{}
+#sec_3{
+    padding: 0 30px;
+}
 #sec_3>h2{}
 /* Custom Select */
 /* The container must be positioned relative: */
@@ -136,16 +185,22 @@ body{}
 
 #sec_3>.selectButtons{}
 #sec_3>.selectButtons>.custom-select{}
-#sec_3>.selectButtons>.custom-select>.select-selected{}
-#sec_3>.selectButtons>.custom-select>.select-selected::after{}
+#sec_3>.selectButtons>.custom-select>.select-selected{min-width: 130px;justify-content: center;}
+#sec_3>.selectButtons>.custom-select>.select-selected::after{
+    left: 17px;
+    position: absolute;
+}
 #sec_3>.selectButtons>.custom-select>.select-items{}
 #sec_3>.selectButtons>.custom-select>.select-items>div{}
 #sec_3>.selectButtons>.surgeryType{}
 #sec_3>.selectButtons>.surgeryView{}
-#sec_3>.selectButtons>.surgeryType>.select-selected::before{}
-#sec_3>.selectButtons>.surgeryView>.select-selected::before{}
-#sec_3>.selectButtons>.surgeryType>.select-selected.first{ 
+#sec_3>.selectButtons>.surgeryType>.select-selected::before{
+    display: none;
 }
+#sec_3>.selectButtons>.surgeryView>.select-selected::before{
+    display: none;
+}
+#sec_3>.selectButtons>.surgeryType>.select-selected.first{background-position: 70% 50%;}
 #sec_3>.selectButtons>.surgeryType>.select-selected.second{ 
 }
 #sec_3>.selectButtons>.surgeryType>.select-selected.first + .select-items>div{ 
@@ -158,7 +213,11 @@ body{}
 #sec_3>.First-slider>.owl-carousel.first .item{}
 #sec_3>.First-slider>.owl-carousel.first .item img{}
 #sec_3>.First-slider>.owl-carousel.first .owl-stage-outer{}
-#sec_3>.First-slider>.owl-carousel.first .owl-nav{}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
 #sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-prev{}
 #sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-prev img{}
 #sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-next{}
@@ -172,43 +231,84 @@ body{}
 #sec_4{}
 #sec_4>.firstCover{}
 #sec_4>.firstCover{}
-#sec_4>.firstCover img{}
-#sec_4>.firstCover button{}
+#sec_4>.firstCover img{
+    width: 90%;
+    margin: auto;
+}
+#sec_4>.firstCover button{
+    margin: auto;
+    background: white;
+    color: #EA65A5;
+    bottom: 0;
+    top: 0;
+    height: 70px;
+    right: 0;
+    left: 0;
+    max-width: 200px;
+}
 #sec_4>.firstCover button::before{}
 #sec_4>.firstCover button:hover{}
 #sec_4>.firstCover button:hover before{}
-#sec_4>.aboutDr{}
-#sec_4>.aboutDr>.content{}
+#sec_4>.aboutDr{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#sec_4>.aboutDr>.content{
+    width: 100%;
+    text-align: center;
+}
 #sec_4>.aboutDr>.content>h3{}
-#sec_4>.aboutDr>.content>span{}
-#sec_4>.aboutDr>.content>p{}
-#sec_4>.aboutDr>.img{}
+#sec_4>.aboutDr>.content>span{
+    font-size: 15px;
+}
+#sec_4>.aboutDr>.content>p{
+    width: 100%;
+}
+#sec_4>.aboutDr>.img{
+    padding-right: 0;
+    width: 90%;
+    justify-content: center;
+}
 #sec_4>.aboutDr>.img img{}
-#sec_4>.aboutDr>.certificates{}
+#sec_4>.aboutDr>.certificates{
+    display: none;
+}
 #sec_4>.aboutDr>.certificates img{}
 
-#sec_5{}
+#sec_5{
+    padding: 0 40px;
+}
 #sec_5>p{}
 #sec_5>p img{}
 #sec_5>ul{}
 #sec_5>ul.items{}
-#sec_5>ul.items>li.item{}
+#sec_5>ul.items>li.item{
+    margin-bottom: 30px;
+}
 #sec_5>ul.items>li.item>div{}
 #sec_5>ul.items>li.item>div>img{}
 
 /* questions*/
-#sec_6{}
+#sec_6{
+    margin-top: 50px;
+}
 #sec_6>h2{
     
 }
 #sec_6>.items{
-    
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
 }
 #sec_6>.items .panel-group{
-   
+   margin-bottom: 0;
+   padding: 0 10px;
 }
 #sec_6>.items .panel-group .panel-default{
-    
+    border: none;
+    border-bottom: 1px solid #0000001a;
+    border-radius: 0;
 }
 #sec_6>.items .panel-group .panel-default>div{}
 #sec_6>.items .panel-group .panel-default .panel-title{
@@ -222,33 +322,68 @@ body{}
 #sec_6>.items .panel-group .panel-default .panel-collapse .panel-body{}
 #sec_6>.items .panel-group .panel-default .panel-collapse .panel-body img{}
 
-#sec_7{}
+#sec_7{
+    position: relative;
+}
 #sec_7 .secondCover{}
 #sec_7 .secondCover .bgcover{}
-#sec_7 .secondCover .bgcover img{}
-#sec_7 .secondCover .content{}
-#sec_7 .secondCover .content h3{}
-#sec_7 .secondCover .content>p{}
-#sec_7 .secondCover .content>p img{}
+#sec_7 .secondCover .bgcover img{
+    width: 100%;
+}
+#sec_7 .secondCover .content{
+    width: 100%;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#sec_7 .secondCover .content h3{
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 20px;
+}
+#sec_7 .secondCover .content>p{
+    display: flex;
+    align-content: space-between;
+}
+#sec_7 .secondCover .content>p img{
+    max-height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
 #sec_7 .secondCover .content>p span{}
-#sec_7 .secondCover .content>ul.items{}
-#sec_7 .secondCover .content>ul.items>li.item{}
+#sec_7 .secondCover .content>ul.items{
+    flex-wrap: wrap;
+}
+#sec_7 .secondCover .content>ul.items>li.item{
+    width: 50%;
+}
 #sec_7 .secondCover .content>ul.items>li.item a{}
-#sec_7 .secondCover .content>ul.items>li.item a div{}
+#sec_7 .secondCover .content>ul.items>li.item a div{min-width: auto;width: 90%;min-height: 120px;margin-left: 0;margin-bottom: 15px;}
 #sec_7 .secondCover .content>ul.items>li.item a div::before{}
 #sec_7 .secondCover .content>ul.items>li.item a img{}
 #sec_7 .secondCover .content>ul.items>li.item a span{}
 #sec_7 .secondCover .content>button{}
 
-#sec_8{}
+#sec_8{
+    margin-top: 55px;
+}
 #sec_8 h2{}
 #sec_8 ul.items{}
-#sec_8 ul.items>li.item{}
-#sec_8 ul.items>li.item>div.img{}
+#sec_8 ul.items>li.item{
+}
+#sec_8 ul.items>li.item>div.img{
+    margin: 5px auto;
+    width: 90%;
+}
 #sec_8 ul.items>li.item>div.img img{}
 #sec_8 ul.items>li.item>div.img img{}
 
-#sec_9{}
+#sec_9{
+    margin-top: 55px;
+}
 #sec_9 h2{}
 #sec_9 .Second-slider{}
 #sec_9 .Second-slider .owl-carousel.second{}
@@ -260,7 +395,11 @@ body{}
 #sec_9 .Second-slider .owl-carousel.second .item .content .text{}
 #sec_9 .Second-slider .owl-carousel.second .item .content .text p{}
 #sec_9 .Second-slider .owl-carousel.second .owl-stage-outer{}
-#sec_9 .Second-slider .owl-carousel.second .owl-nav{}
+#sec_9 .Second-slider .owl-carousel.second .owl-nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
 #sec_9 .Second-slider .owl-carousel.second .owl-nav .owl-prev{}
 #sec_9 .Second-slider .owl-carousel.second .owl-nav .owl-prev img{}
 #sec_9 .Second-slider .owl-carousel.second .owl-nav .owl-next{}
@@ -271,22 +410,56 @@ body{}
 #sec_9 .Second-slider .owl-carousel.second .owl-dots button span{}
 #sec_9 .Second-slider .owl-carousel.second .owl-dots button.active span{}
 
-.wrapper footer{}
+.wrapper footer{
+    margin-top: 0;
+    position: relative;
+    padding-top: 20px;
+}
 .wrapper footer>.container{}
-.wrapper footer>.container>.content{}
-.wrapper footer>.container>.content>.name{}
+.wrapper footer>.container>.content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 0;
+}
+.wrapper footer>.container>.content>.name{
+    margin-bottom: 20px;
+}
 .wrapper footer>.container>.content>.name h4{}
-.wrapper footer>.container>.content>.name span{}
+.wrapper footer>.container>.content>.name span{
+    font-size: 15px;
+}
 .wrapper footer>.container>.content>.nav{}
-.wrapper footer>.container>.content>.nav ul{}
-.wrapper footer>.container>.content>.nav ul li{}
+.wrapper footer>.container>.content>.nav ul{
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 30px;
+}
+.wrapper footer>.container>.content>.nav ul li{
+    margin: 7px 0;
+}
 .wrapper footer>.container>.content>.nav ul li a{}
 .wrapper footer>.container>.content>.nav ul li a img{}
-.wrapper footer>.container>.content>.button{}
-.wrapper footer>.container>.content>.button button{}
+.wrapper footer>.container>.content>.button{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.wrapper footer>.container>.content>.button button{
+    padding: 10px 27px;
+    font-size: 16px;
+    line-height: 1.7;
+    border-radius: 10px;
+    border-width: 2px;
+}
 .wrapper footer>.container>.content>.button button::before{}
 .wrapper footer>.container>.content>.button button:hover{}
-.wrapper footer>.container>.info{}
+.wrapper footer>.container>.info{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
 .wrapper footer>.container>.info .address{}
 .wrapper footer>.container>.info .address p{}
 .wrapper footer>.container>.info .number{}
@@ -300,8 +473,22 @@ body{}
 .wrapper footer>.container>.info .social ul li div a img{}
 .wrapper footer>.container>.info .social ul li div a span{}
 
-.wrapper .adviceBody{}
-.wrapper .adviceBody .formBody{}
+.wrapper .adviceBody{
+    /* left: 0; */
+    right: -100%;
+    /* margin: auto; */
+    width: 90%;
+    height: 100%;
+    align-items: center;
+}
+.wrapper .adviceBody .formBody{
+    width: 100%;
+    height: 70%;
+}
+.wrapper .adviceBody .formBody .pages .formPage form>.successQS button{
+    position: relative;
+    height: 60px;
+}
 .wrapper .adviceBody .formBody .topButtons{}
 .wrapper .adviceBody .formBody .topButtons #toAdvicePage{}
 .wrapper .adviceBody .formBody .topButtons #toWhatsappPage{}
@@ -329,14 +516,35 @@ body{}
 .wrapper .adviceBody .formBody .pages .whatsappPage .content{}
 .wrapper .adviceBody .formBody .pages .whatsappPage .content img{}
 .wrapper .adviceBody .formBody .pages .whatsappPage .content p{}
-.wrapper .adviceBody .formBody .pages .whatsappPage .content a{}
+.wrapper .adviceBody .formBody .pages .whatsappPage .content a{
+    font-size: 18px;
+}
 .wrapper .adviceBody .formBody .pages .telegramPage{}
 .wrapper .adviceBody .formBody .pages .telegramPage .content{}
 .wrapper .adviceBody .formBody .pages .telegramPage .content img{}
 .wrapper .adviceBody .formBody .pages .telegramPage .content p{}
-.wrapper .adviceBody .formBody .pages .telegramPage .content a{}
-.wrapper .adviceBody .closeFormButton{}
+.wrapper .adviceBody .formBody .pages .telegramPage .content a{
+    font-size: 18px;
+}
+.wrapper .adviceBody .closeFormButton{
+    position: absolute;
+    background-color: #ff4082;
+    border-radius: 35px;
+    right: 0;
+    left: 0;
+    top: 25px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+    
+.wrapper .adviceBody.open{
+    right: 0;
+    left:0 ;
+}
 
+.responsiv{display: inherit;}
+.desktop{display: none;}
 
 
 
