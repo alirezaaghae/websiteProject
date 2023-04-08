@@ -56,7 +56,7 @@ $parameters['isflash'] =false;
 echo $sms_client->SendSimpleSMS2($parameters)->SendSimpleSMS2Result;
 }
 function smscompiler($string){
-global $age,$goingTo,$phone,$datetime;
+global $selected,$name,$phone,$website,$charge,$key_words,$social;
 $string=str_replace('{age}',$age,$string);
 $string=str_replace('{goingTo}',$goingTo,$string);
 $string=str_replace('{phone}',$phone,$string);

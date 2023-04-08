@@ -201,6 +201,9 @@ $('.owl-carousel.second').owlCarousel({
   });
 
 function sendAjaxForm() {
+    $('form').submit(function () {
+        return false;
+    });
     var age, goingTo, phone;
     var elm = $(this).parent();
     var a = 'ld';
@@ -230,7 +233,6 @@ function sendAjaxForm() {
             // console.log(result);
             $('.thirdQS').removeClass('show');
             $('.successQS').addClass('show');
-            $('.backbutton').hide();
         }
     });
 
@@ -248,22 +250,6 @@ function changePage(c){
     $('.'+c.id).addClass('show');
 }
 
-$('#toWhatsappPage').click(function(){
-    $('#toAdvicePage').css('border-radius', '0 0 0 20px');
-    $('#toTelegramPage').css('border-radius', '0 0 20px 0');
-});
-
-$('#toTelegramPage').click(function(){
-    $('#toAdvicePage').css('border-radius', '0 0 0 0');
-    $('#toWhatsappPage').css('border-radius', '0 0 0 20px');
-});
-
-$('#toAdvicePage').click(function(){
-    $('#toTelegramPage').css('border-radius', '0 0 0 0');
-    $('#toWhatsappPage').css('border-radius', '0 0 25px 0');
-});
-
-
 $('.shadowBG,.closeFormButton').click(function() {
    $('.adviceBody').removeClass('open');
    $('.shadowBG').hide();
@@ -273,7 +259,6 @@ $('.shadowBG,.closeFormButton').click(function() {
 $('.freeAdvice').click(function() {
    $('.adviceBody').addClass('open');
    $('.shadowBG').show();
-   $('.backbutton').hide();
 });
 
 $("#phone").keypress(function() {
@@ -288,40 +273,21 @@ $('input[type="radio"]').on("click", function() {
 	if($("input:radio[name=age]").is(':checked')) {
 		$('.firstQS').removeClass('show');
 		$('.secondQS').addClass('show');
-        $('.backbutton').show();
         
 	} if($("input:radio[name=goingTo]").is(':checked')) {
 		$('.secondQS').removeClass('show');
 		$('.thirdQS').addClass('show');
-        $('.backbutton').show();
 	}
 });
 
-$('form').submit(function () {
-    return false;
-});
-
-$('.InputButton').click(function() {
-    if($(this).hasClass('enable')){
-        sendAjaxForm();
-    }
-});
-
-$('.backbutton').click(function() {
-    if($('.secondQS').hasClass('show')){
-        $('.firstQS').addClass('show');
-		$('.secondQS').removeClass('show');
-        $('.backbutton').hide();
-    }
-    if($('.thirdQS').hasClass('show')){
-        $('.secondQS').addClass('show');
-		$('.thirdQS').removeClass('show');
-    }
+$('.InputButton.enable').click(function() {
+   sendAjaxForm();
 });
 
 
 
 
+<<<<<<< HEAD
 
 =======
   });
@@ -332,3 +298,5 @@ $('.backbutton').click(function() {
 =======
   });
 >>>>>>> parent of b4142c5 (complate html css Breast_prosthesis)
+=======
+>>>>>>> parent of 81d2290 (finish Breast_prosthesis)

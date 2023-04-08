@@ -8,7 +8,7 @@ html,body,button,input,optgroup,a,span,form,div,ul,li,p,strong,em,div,h1,h2,h3,h
 a{transition:all .3s;text-decoration: none;}
 /*    start code here   */
 
-body{background: #fff;position: relative;overflow: hidden;}
+body{background: #fff;position: relative;}
 .wrapper{position: relative;}
 .wrapper>header{}
 .wrapper>main{}
@@ -45,7 +45,7 @@ body{background: #fff;position: relative;overflow: hidden;}
 #sec_1>.content>h1::after{content: '«';display: block;color: #FFA2BE;position: absolute;font-size: 40px;top: -52px;left: 0;right: 219px;margin: auto;width: 27px;text-align: center;font-weight: 100;font-family: 'IRANSans';background: #5c2646;}
 #sec_1>.content>h2{
     color: #FFCFDE;
-    font-family: 'IRANSans' !important;
+    font-family: 'IRANSans';
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -349,6 +349,13 @@ body{background: #fff;position: relative;overflow: hidden;}
     background: #FFBEAB;
     border-radius: 19px;
     border: 1px solid #FFBEAB;
+    font-family: 'MolsaqArabic-ExtraBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 64px;
+    text-align: right;
+    color: #FFFFFF;
     padding: 0px 30px;
     transition: all .3s;
     margin-top: 45px;
@@ -357,16 +364,6 @@ body{background: #fff;position: relative;overflow: hidden;}
 #sec_7 .secondCover .content>button:hover{
     color: #FFBEAB;
     background-color: inherit;
-}
-
-#sec_7 .secondCover .content>button span{
-    font-family: 'MolsaqArabic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 64px;
-    text-align: right;
-    color: #FFFFFF;
 }
 
 #sec_8{
@@ -556,17 +553,14 @@ body{background: #fff;position: relative;overflow: hidden;}
     height: inherit;
     transform: scale(0.9);
     display: inline-block;
-    transition: all .3s;
 }
-
-.wrapper footer>.container>.content>.nav ul li a:hover img{transform: scale(1);}
 .wrapper footer>.container>.content>.button{}
 .wrapper footer>.container>.content>.button button{
     position: relative;
     background: inherit;
     border: 2px solid #FFA2BE;
     border-radius: 18px;
-    font-family: 'MolsaqArabic';
+    font-family: 'MolsaqArabic-ExtraBold';
     font-style: normal;
     overflow: hidden;
     font-weight: 400;
@@ -616,13 +610,12 @@ body{background: #fff;position: relative;overflow: hidden;}
 .wrapper footer>.container>.info .social ul li{}
 .wrapper footer>.container>.info .social ul li div{}
 .wrapper footer>.container>.info .social ul li div a{}
+.wrapper footer>.container>.info .social ul li div a:hover img{}
 .wrapper footer>.container>.info .social ul li div a img{
-    transition: all .3s;
     height: 30px;
     width: 30px;
     margin: 15px;
 }
-.wrapper footer>.container>.info .social ul li div a:hover img{transform: scale(1.1);}
 .wrapper footer>.container>.info .social ul li div a span{}
 
 .shadowBG{position: fixed;background-color: #000000;opacity: 0.7;z-index:2;width:100%;height:100%;top: 0;display:none;}
@@ -653,10 +646,9 @@ body{background: #fff;position: relative;overflow: hidden;}
     display: flex;
 }
 
-/*.wrapper .adviceBody .formBody .topButtons::after{content: '';background-color: #FFA8C6;height:100%;width: 100%;}*/
+.wrapper .adviceBody .formBody .topButtons::after{content: '';background-color: #FFA8C6;height:100%;width: 100%;}
 
 .wrapper .adviceBody .formBody .topButton{
-    width: 100%;
     height: 100%;
     border: none;
     background-color: #FFA8C6;
@@ -731,7 +723,7 @@ body{background: #fff;position: relative;overflow: hidden;}
     transition: all .3s;
 }
 
-.wrapper .adviceBody .formBody .pages .formPage form label:hover,.wrapper .adviceBody .formBody .pages .formPage form input:checked + label{
+.wrapper .adviceBody .formBody .pages .formPage form label:hover{
     background-color: #ffa8c647;
     border-color: #ffa8c6;
 }
@@ -758,10 +750,6 @@ body{background: #fff;position: relative;overflow: hidden;}
 .wrapper .adviceBody .formBody .pages .formPage form .InputButton.enable{
     background: #FFA8C6;
     transition: all .3s;
-}
-
-.wrapper .adviceBody .formBody .pages .formPage form .InputButton.pending{
-    background: #EFEFEF;
 }
 
 .wrapper .adviceBody .formBody .pages .formPage form>.firstQS{display: none;align-items: center;flex-direction: column;justify-content: center;}
@@ -846,7 +834,6 @@ body{background: #fff;position: relative;overflow: hidden;}
     margin: 30px 0 20px 0;
 }
 .wrapper .adviceBody .formBody .pages .whatsappPage .content a{
-    color: white;
     width: 100%;
     height: 66px;
     background: #EC709B;
@@ -876,7 +863,6 @@ body{background: #fff;position: relative;overflow: hidden;}
     margin: 30px 0 20px 0;
 }
 .wrapper .adviceBody .formBody .pages .telegramPage .content a{
-    color: white;
     width: 100%;
     height: 66px;
     background: #EC709B;
@@ -897,7 +883,8 @@ body{background: #fff;position: relative;overflow: hidden;}
 
 
 
-.responsiv{display: none;}
+
+
 
 =======
 #sec_6>.items .panel-group .panel-default .panel-collapse .panel-body img{}
