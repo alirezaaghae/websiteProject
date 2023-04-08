@@ -197,6 +197,7 @@ $('.owl-carousel.second').owlCarousel({
        }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   });
 
 function sendAjaxForm() {
@@ -322,6 +323,9 @@ $('.backbutton').click(function() {
 
 
 
+=======
+  });
+>>>>>>> parent of b4142c5 (complate html css Breast_prosthesis)
 =======
   });
 >>>>>>> parent of b4142c5 (complate html css Breast_prosthesis)
