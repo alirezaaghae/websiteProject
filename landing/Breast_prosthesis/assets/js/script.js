@@ -154,13 +154,13 @@ document.addEventListener("click", closeAllSelect);
       autoplay: true,
       autoplayTimeout: 6000,
       nav: true,
-      margin: 20,
+      margin: 80,
       navText : ["<img src='assets/images/right_button.svg' width='54px'>","<img src='assets/images/left_button.svg' width='54px'>"],
       responsive:{
         0:{
             items:1,
             nav:false,
-            margin: 10
+            margin: 80
         },
         600:{
             items:2,
@@ -179,13 +179,13 @@ $('.owl-carousel.second').owlCarousel({
       autoplay: true,
       autoplayTimeout: 6000,
       nav: true,
-      margin: 30,
+      margin: 80,
       navText : ["<img src='assets/images/right_button_cm.svg' width='35px'>","<img src='assets/images/left_button_cm.svg' width='35px'>"],
       responsive:{
         0:{
             items:1,
             nav:false,
-            margin: 10
+            margin: 80
         },
         600:{
             items:2,
@@ -195,6 +195,7 @@ $('.owl-carousel.second').owlCarousel({
             items:3,
         }
        }
+<<<<<<< HEAD
   });
 
 function sendAjaxForm() {
@@ -320,3 +321,6 @@ $('.backbutton').click(function() {
 
 
 
+=======
+  });
+>>>>>>> parent of b4142c5 (complate html css Breast_prosthesis)

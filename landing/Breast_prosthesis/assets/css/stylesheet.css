@@ -1,6 +1,6 @@
 @import url(styleFontIran.css);
-::-moz-selection {color: #fff;background: #ffa2be;}
-::selection {color: #fff;background: #ffa2be;}
+::-moz-selection {color: #fff;background: #1B99DA;}
+::selection {color: #fff;background: #1B99DA;}
 :focus {outline: none;}
 * {margin: 0;padding: 0;}
 html {overflow-x: hidden; scroll-behavior: smooth;}
@@ -10,71 +10,25 @@ a{transition:all .3s;text-decoration: none;}
 
 body{background: #fff;position: relative;overflow: hidden;}
 .wrapper{position: relative;}
-.wrapper>header{
-    background: #5D2646;
-    padding-top: 50px;
-}
+.wrapper>header{}
 .wrapper>main{}
 .wrapper>main>.container{}
-.wrapper>main>.container>section{
-}
+.wrapper>main>.container>section{}
 .wrapper>header>container{}
-.wrapper nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.wrapper nav>ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.wrapper nav>ul>li{
-}
-.wrapper nav>ul>li>a{
-    margin-left: 30px;
-}
-.wrapper nav>ul>li>a:hover>img{transform: scale(1);}
-.wrapper nav>ul>li>a>img{
-    height: inherit;
-    transform: scale(0.9);
-    transition: all .2s;
-}
-.wrapper>header img.logo{
-    height: 62px;
-}
-.wrapper h2{
-    font-family: 'MolsaqArabic' !important;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 2;
-    text-align: center;
-    color: #FFA2BE;
-}
+.wrapper nav{}
+.wrapper nav>ul{}
+.wrapper nav>ul>li{}
+.wrapper nav>ul>li>a{}
+.wrapper nav>ul>li>a:hover>img{}
+.wrapper nav>ul>li>a>img{}
+.wrapper>header img.logo{}
+.wrapper h2{}
 
-#sec_1{
-    display: flex;
-    position: relative;
-    margin-bottom: 120px;
-    margin-top: 50px;
-}
-#sec_1>.content{
-    width: 80%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#sec_1>.content>span{
-    font-family: 'MolsaqArabic';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    color: #FFA2BE;
-}
+#sec_1{}
+#sec_1>.content{}
+#sec_1>.content>span{}
 #sec_1>.content>hr{}
+<<<<<<< HEAD
 #sec_1>.content>h1{
     font-family: 'IRANSans';
     font-style: normal;
@@ -95,149 +49,47 @@ body{background: #fff;position: relative;overflow: hidden;}
     font-size: 22px;
     margin-bottom: 30px;
 }
+=======
+#sec_1>.content>h1{}
+#sec_1>.content>h1:after{content:'>>';display:inline-block;}
+#sec_1>.content>h2{}
+>>>>>>> parent of b4142c5 (complate html css Breast_prosthesis)
 #sec_1>.content>.buttons{}
-#sec_1>.content>.buttons>a.first{
-    position: relative;
-    border: 1px solid #FFBCD0;
-    border-radius: 15px;
-    color: #FFBCD0;
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    display: inline-block;
-    padding: 15px 25px;
-    overflow: hidden;
-    z-index: 1;
-}
-#sec_1>.content>.buttons>a.first::before{content:'';background: #FFBCD0;position: absolute;transition: all .4s;border-radius: 30%;width: 0;height: 130%;right: -20px;top:0;bottom:0;margin:auto;z-index: -1;}
-#sec_1>.content>.buttons>a.first:hover{color: #fff;}
-#sec_1>.content>.buttons>a.first:hover::before{width: 120%;}
-#sec_1>.content>.buttons>a.second{
-    position: relative;
-    border: 1px solid #ffffff;
-    border-radius: 15px;
-    color: #ffffff;
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    display: inline-block;
-    padding: 15px 25px;
-    overflow: hidden;
-    margin-right: 17px;
-    z-index: 1;
-}
-#sec_1>.content>.buttons>a.second::before{content:'';background: #ffffff;position: absolute;transition: all .4s;border-radius: 30%;width: 0;height: 130%;right: 0;top:0;bottom:0;margin:auto;z-index: -1;}
-#sec_1>.content>.buttons>a.second:hover{color:#FFBCD0;}
-#sec_1>.content>.buttons>a.second:hover::before{width: 110%;}
-#sec_1>.img{
-    width: 40%;
-    position: relative;
-}
-#sec_1>.img>img{
-    width: 80%;
-}
-#sec_1>.img::after{content:'';border-bottom: 1px dashed #FFA8C5;height:2px;width:100%;z-index:0;position:absolute;top:0;bottom:0;margin:auto;}
+#sec_1>.content>.buttons>a.first{}
+#sec_1>.content>.buttons>a.first:before{content:'';}
+#sec_1>.content>.buttons>a.second{}
+#sec_1>.content>.buttons>a.second:before{content:'';}
+#sec_1>.img{}
+#sec_1>.img>img{}
+#sec_1>.img>img::after{content:'';border-bottom: 2px dashed #FFA8C5; height:2px; width:100%; z-index:0; position:absolute; top:0; bottom:0; margin:auto;}
 
-#sec_2{
-    position: relative;
-}
-#sec_2>.icons{
-    margin: 95px 0;
-}
-#sec_2>.icons>ul.items{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-#sec_2>.icons>ul.items>li.item{
-    display: flex;
-    justify-content: center;
-}
-#sec_2>.icons>ul.items>li.item>.img{margin-left: 20px;}
-#sec_2>.icons>ul.items>li.item>.img>img{
-    height: 70px;
-}
-#sec_2>.icons>ul.items>li.item>.text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
-#sec_2>.icons>ul.items>li.item>.text>span{
-    color: #B1B1B1;
-    font-family: 'IRANSans';
-    font-weight: 400;
-}
-#sec_2>.icons>ul.items>li.item>.text>b{
-    color: #FB6B90;
-    font-family: 'IRANSans';
-    font-weight: 600;
-}
-#sec_2>.body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+#sec_2{}
+#sec_2>.icons{}
+#sec_2>.icons>ul.items{}
+#sec_2>.icons>ul.items>li.item{}
+#sec_2>.icons>ul.items>li.item>.img{}
+#sec_2>.icons>ul.items>li.item>.img>img{}
+#sec_2>.icons>ul.items>li.item>.text{}
+#sec_2>.icons>ul.items>li.item>.text>span{}
+#sec_2>.icons>ul.items>li.item>.text>b{}
+#sec_2>.body{}
 #sec_2>.body>h2{}
-#sec_2>.body>span{
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 17px;
-    /* line-height: 39px; */
-    text-align: center;
-    display: block;
-    color: #666666;
-}
-#sec_2>.body>img{
-    max-width: 600px;
-    text-align: center;
-    margin-top: 60px;
-}
+#sec_2>.body>span{}
+#sec_2>.body>img{}
 .desktop{display: inherit;}
 .mobile{display: none;}
-#sec_2>.itemsSec{
-    margin-top: 150px;
-}
+#sec_2>.itemsSec{}
 #sec_2>.itemsSec>ul.items{}
 #sec_2>.itemsSec>ul.items>li.item{}
-#sec_2>.itemsSec>ul.items>li.item>div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#sec_2>.itemsSec>ul.items>li.item>div>img{max-width: 230px;}
+#sec_2>.itemsSec>ul.items>li.item>div{}
+#sec_2>.itemsSec>ul.items>li.item>div>img{}
 #sec_2>.itemsSec>ul.items>li.item>div>span{}
-#sec_2>.itemsSec>ul.items>li.item>div>ul{
-    margin-top: 55px;
-}
-#sec_2>.itemsSec>ul.items>li.item>div>ul>li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#sec_2>.itemsSec>ul.items>li.item>div>ul>li>img{
-    margin-left: 10px;
-    width: 25px;
-}
-#sec_2>.itemsSec>ul.items>li.item>div>ul>li>span{
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 2.7;
-    text-align: right;
-    font-feature-settings: 'liga' off;
-    color: #8A8A8A;
-}
+#sec_2>.itemsSec>ul.items>li.item>div>ul{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul>li{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul>li>img{}
+#sec_2>.itemsSec>ul.items>li.item>div>ul>li>span{}
 
-#sec_3{
-    margin-top: 120px;
-    padding: 0 70px;
-}
+#sec_3{}
 #sec_3>h2{}
 /* Custom Select */
 /* The container must be positioned relative: */
@@ -257,62 +109,43 @@ body{background: #fff;position: relative;overflow: hidden;}
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #FFA2BE;
-  border-radius: 10px;
-  min-width: 230px;
-  height: 55px;
 }
 
 /* Style the arrow inside the select element: */
-.select-selected::after {
-  /* position: absolute; */
-  content: '›';
-  color: #6A6A6A;
-  font-family: 'IRANSans';
-  font-size: 20px;
-  /* left: 0; */
-  /* top: 0; */
-  /* width: 0; */
-  /* height: 0; */
-  /* border: 6px solid transparent; */
-  transform: rotate(-90deg);
-  transition: all .3s;
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
 }
-.select-selected.select-arrow-active{
-    border-radius: 10px 10px 0 0;
-    border-bottom: 0;
-}
+
 /* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active::after {transform: rotate(90deg);}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
 
 /* style the items (options), including the selected item: */
 .select-items div{
   color: #ffffff;
   padding: 8px 16px;
   border: 1px solid transparent;
-  /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
 }
 
 /* Style items (options): */
 .select-items {
-  background: #FFFFFF;
-  border: 1px solid #FFA2BE;
-  border-top: 0;
-  border-radius: 0 0 10px 10px;
   position: absolute;
+  background-color: DodgerBlue;
   top: 100%;
   left: 0;
   right: 0;
   z-index: 99;
-  transition: all .3s;
-  overflow: hidden;
-  
-}
-
-#sec_3>.selectButtons>.surgeryView .select-items{
-    padding-bottom: 10px;
 }
 
 /* Hide the items when the select box is closed: */
@@ -321,61 +154,32 @@ body{background: #fff;position: relative;overflow: hidden;}
 }
 
 .select-items div:hover, .same-as-selected {
-  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-#sec_3>.selectButtons>.surgeryView .select-items div:hover::after{content: '';background: #EBEBEB;border-radius: 12px;width: 90%;height: 90%;position: absolute;right: 0;left: 0;top: 0;bottom: 0;margin: auto;z-index: -1;}
 
-
-.selectButtons div{/* width: 100px; *//* min-height:50px; */}
+.selectButtons div{width: 100px;min-height:50px;}
 .surgeryType .select-items div:nth-child(1){
     
 }
 
-#sec_3>.selectButtons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
+#sec_3>.selectButtons{}
 #sec_3>.selectButtons>.custom-select{}
-#sec_3>.selectButtons>.custom-select>.select-selected{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #6A6A6A;
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-#sec_3>.selectButtons>.custom-select>.select-selected::after{}
+#sec_3>.selectButtons>.custom-select>.select-selected{}
+#sec_3>.selectButtons>.custom-select>.select-selected:after{}
 #sec_3>.selectButtons>.custom-select>.select-items{}
-#sec_3>.selectButtons>.custom-select>.select-items>div{
-    color: #6A6A6A;
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    text-align: center;
-    line-height: 3;
-    position: relative;
-    z-index: 1;
-    min-height: 60px;
-}
-#sec_3>.selectButtons>.surgeryType{
-    margin-left: 20px;
-}
+#sec_3>.selectButtons>.custom-select>.select-items>div{}
+#sec_3>.selectButtons>.surgeryType{}
 #sec_3>.selectButtons>.surgeryView{}
-#sec_3>.selectButtons>.surgeryType>.select-selected::before{content: "نوع عمل:";color: #BDBDBD;font-family: 'IRANSans';font-size: 14px;}
-#sec_3>.selectButtons>.surgeryView>.select-selected::before{content: "نمای جراحی:";color: #BDBDBD;font-family: 'IRANSans';font-size: 14px;}
-#sec_3>.selectButtons>.surgeryType>.select-selected.first{background-image: url(../images/first_select_text.png);background-repeat: no-repeat;background-position: 50% 55%;background-size: 70px;}
+#sec_3>.selectButtons>.surgeryType>.select-selected:before{content: "نوع عمل:";}
+#sec_3>.selectButtons>.surgeryView>.select-selected:before{content: "نمای جراحی:";}
+#sec_3>.selectButtons>.surgeryType>.select-selected.first{ background-image: url(../images/first_select_text.png);
+}
 #sec_3>.selectButtons>.surgeryType>.select-selected.second{ background-image: url(../images/second_select_text.png);
 }
-#sec_3>.selectButtons>.surgeryType>.select-selected.first + .select-items>div{background: url(../images/second_select_text.png);background-repeat: no-repeat;background-position: 50% 55%;background-size: 70px;}
-#sec_3>.selectButtons>.surgeryType .select-items div:hover{background: url(../images/second_select_text.png) #EBEBEB !important;background-repeat: no-repeat !important;background-position: 50% 55% !important;background-size: 70px !important;}
+#sec_3>.selectButtons>.surgeryType>.select-selected.first + .select-items>div{ background-image: url(../images/second_select_text.png);
+}
+
 #sec_3>.selectButtons>.surgeryType>.select-selected.second + .select-items>div{background-image: url(../images/first_select_text.png);}
 
 #sec_3>.First-slider{}
@@ -383,171 +187,23 @@ body{background: #fff;position: relative;overflow: hidden;}
 #sec_3>.First-slider>.owl-carousel.first .item{}
 #sec_3>.First-slider>.owl-carousel.first .item img{}
 #sec_3>.First-slider>.owl-carousel.first .owl-stage-outer{}
-#sec_3>.First-slider>.owl-carousel.first .owl-nav{
-    position: relative;
-    width: 50%;
-    text-align: center;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#sec_3>.First-slider>.owl-carousel.first .owl-nav button{
-    filter: grayscale(1);
-    transition: all .3s;
-    opacity: 0.7;
-}
-
-#sec_3>.First-slider>.owl-carousel.first .owl-nav button:hover{
-    filter: grayscale(0);
-    opacity: 1;
-}
-#sec_3>.First-slider>.owl-carousel.first .owl-nav button img{
-    width: 25px;
-}
+#sec_3>.First-slider>.owl-carousel.first .owl-nav{}
 #sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-prev{}
 #sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-prev img{}
 #sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-next{}
 #sec_3>.First-slider>.owl-carousel.first .owl-nav .owl-next img{}
-#sec_3>.First-slider>.owl-carousel.first .owl-dots{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 6px;
-    left: 0;
-    right: 0;
-    width: 100px;
-    margin: auto;
-}
-#sec_3>.First-slider>.owl-carousel.first .owl-dots button{
-    margin: 0 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button{}
 #sec_3>.First-slider>.owl-carousel.first .owl-dots button.active{}
-#sec_3>.First-slider>.owl-carousel.first .owl-dots button span{
-    border: 1px solid #AAAAAA;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    border-radius: 100%;
-    transition: all .3s;
-}
-#sec_3>.First-slider>.owl-carousel.first .owl-dots button span:hover{
-    background: rgba(255, 162, 190, 0.95);
-    border: 1px solid rgb(255, 162, 190);
-}
-#sec_3>.First-slider>.owl-carousel.first .owl-dots button.active span{
-    background: #6D6D6D;
-    border: 1px solid #6D6D6D;
-}
-
-#sec_4{
-    margin-top: 103px;
-}
-#sec_4>.firstCover{}
-#sec_4>.firstCover{
-    position: relative;
-}
-#sec_4>.firstCover img{}
-#sec_4>.firstCover button{
-    border: 0;
-    background: #EA65A5;
-    border-radius: 16px;
-    font-family: 'MolsaqArabic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 48px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 7px 34px;
-    min-width: 180px;
-    min-height: 60px;
-    position: absolute;
-    bottom: 60px;
-    right: 80px;
-    z-index: 1;
-    overflow: hidden;
-}
-#sec_4>.firstCover button::before{content:'';background: #ffffff;position: absolute;transition: all .4s;border-radius: 30%;width: 0;height: 130%;right: 0;top: 0;bottom: 0;margin: auto;z-index: -1;}
-#sec_4>.firstCover button:hover{
-    color: #EA65A5;
-}
-#sec_4>.firstCover button:hover::before{
-    width: 110%;
-}
-#sec_4>.aboutDr{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 100px 0;
-    padding: 0 40px;
-}
-#sec_4>.aboutDr>.content{
-    width: 80%;
-}
-#sec_4>.aboutDr>.content>h3{
-    color: #B21368;
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 3;
-}
-#sec_4>.aboutDr>.content>span{
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 34px;
-    color: #535353;
-}
-#sec_4>.aboutDr>.content>p{
-    font-family: 'IRANSans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 2;
-    font-feature-settings: 'liga' off;
-    color: #7D7D7D;
-    width: 85%;
-    margin-top: 10px;
-}
-#sec_4>.aboutDr>.img{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    padding-right: 20px;
-}
-#sec_4>.aboutDr>.img img{
-    max-height: 400px;
-}
-#sec_4>.aboutDr>.certificates{
-    width: 30%;
-}
-#sec_4>.aboutDr>.certificates img{
-    margin: 10px 0;
-}
-
-#sec_5{
-    padding: 0 40px;
-}
-#sec_5>p{}
-#sec_5>p img{}
-#sec_5>ul{}
-#sec_5>ul.items{}
-#sec_5>ul.items>li.item{}
-#sec_5>ul.items>li.item>div{}
-#sec_5>ul.items>li.item>div>img{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button span{}
+#sec_3>.First-slider>.owl-carousel.first .owl-dots button.active span{}
 
 /* questions*/
-#sec_6{
-    margin-top: 120px;
-}
 #sec_6>h2{
+    font-size: 30px;
+    color: #3e3e3e;
+    text-align: center;
+    font-weight: bold;
 }
 #sec_6>.items{
     margin-top: 50px;
@@ -575,13 +231,10 @@ body{background: #fff;position: relative;overflow: hidden;}
     align-content: center;
     margin: 25px 10px;
 }
-#sec_6>.items .panel-group .panel-default .panel-title a>div::after{content:'+';font-family: 'IRANSans';font-size: 20px;font-weight: 100;}
-#sec_6>.items .panel-group .panel-default div .panel-title a.on>div::after{content:'-';font-size: 30px;}
-#sec_6>.items .panel-group .panel-default .panel-title a>div img{
-    height: 16px;
-}
+#sec_6>.items .panel-group .panel-default .panel-title a>div img{}
 #sec_6>.items .panel-group .panel-default .panel-collapse{}
 #sec_6>.items .panel-group .panel-default .panel-collapse .panel-body{}
+<<<<<<< HEAD
 #sec_6>.items .panel-group .panel-default .panel-collapse .panel-body img{
     height: 18px;
 }
@@ -1232,3 +885,6 @@ body{background: #fff;position: relative;overflow: hidden;}
 
 .responsiv{display: none;}
 
+=======
+#sec_6>.items .panel-group .panel-default .panel-collapse .panel-body img{}
+>>>>>>> parent of b4142c5 (complate html css Breast_prosthesis)
