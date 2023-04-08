@@ -154,13 +154,13 @@ document.addEventListener("click", closeAllSelect);
       autoplay: true,
       autoplayTimeout: 6000,
       nav: true,
-      margin: 80,
+      margin: 20,
       navText : ["<img src='assets/images/right_button.svg' width='54px'>","<img src='assets/images/left_button.svg' width='54px'>"],
       responsive:{
         0:{
             items:1,
             nav:false,
-            margin: 80
+            margin: 10
         },
         600:{
             items:2,
@@ -179,13 +179,13 @@ $('.owl-carousel.second').owlCarousel({
       autoplay: true,
       autoplayTimeout: 6000,
       nav: true,
-      margin: 80,
+      margin: 30,
       navText : ["<img src='assets/images/right_button_cm.svg' width='35px'>","<img src='assets/images/left_button_cm.svg' width='35px'>"],
       responsive:{
         0:{
             items:1,
             nav:false,
-            margin: 80
+            margin: 10
         },
         600:{
             items:2,
@@ -198,6 +198,9 @@ $('.owl-carousel.second').owlCarousel({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0f66ad0 (update Sat Apr 8)
   });
 
 function sendAjaxForm() {
@@ -289,6 +292,7 @@ $('.InputButton.enable').click(function() {
 
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 =======
   });
 >>>>>>> parent of b4142c5 (complate html css Breast_prosthesis)
@@ -300,3 +304,5 @@ $('.InputButton.enable').click(function() {
 >>>>>>> parent of b4142c5 (complate html css Breast_prosthesis)
 =======
 >>>>>>> parent of 81d2290 (finish Breast_prosthesis)
+=======
+>>>>>>> parent of 0f66ad0 (update Sat Apr 8)
